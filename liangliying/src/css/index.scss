@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+#jyh{
+    width: 100%;
+    height: 4320px;
+    //header部分
+    #header{
+        height: 35px;
+        background: #e5e5e5;
+        color: #7979a9;
+        font-size: 12px;
+        .header_l{
+            line-height: 35px;
+            a:hover{
+            color: red;
+            text-decoration: underline;
+            } 
+        }
+        .header_r ul li{
+            float: left;
+            margin-right: 30px;
+            line-height: 35px;
+            a:hover{
+                color: red;
+                text-decoration: underline;
+            }
+             //有右边框的span
+            .border_r{
+                padding-right: 20px;
+                box-sizing: border-box;
+                border-right: 1px solid #7979a9;
+            }
+        }
+    }
+    
+    //logo部分
+    #logo{
+        height: 142px;
+        //logo左边
+        .logo_l{
+            width: 260px;
+            height: 142px;
+            background: #fff;
+            line-height: 142px;
+            text-align: center;
+        }
+        //logo中间搜索部分
+        .logo_m{
+        width: 515px;
+        height: 142px;
+        margin-left: 80px;
+//      background: greenyellow;
+        p{   
+            margin-top: 40px;
+            height: 53px;
+            position: relative;
+            input:nth-child(1){
+                width: 410px;
+                height: 53px;
+                border: 1px solid #dc0f50;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 20px;
+            }
+            input:nth-child(2){
+                width: 105px;
+                height: 55px;
+                background: #dc0f50;
+                position: absolute;
+                left: 412px;
+                top: 0;
+                color: white;
+            }
+         }
+         div{
+             margin-top: 10px;
+            ul li{
+                float: left;
+                font-size: 14px;
+                color: #ccc;
+                margin-left: 20px;
+                a:hover{
+                    color: red;
+                }
+             }
+         }
+         
+        }
+        //logo右边
+        .logo_r{
+            width: 145px;
+            height: 142px;
+            padding-top: 40px;
+            box-sizing: border-box;
+            margin-left: 160px;
+            p { 
+                width: 130px;
+                height: 54px;
+                border: 1px solid #ccc;
+                line-height: 54px;
+                text-align: center;
+                .img{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: url("img/car_icon.png") no-repeat;
+                }
+            }
+        }
+    
+    }
+    //banner部分
+    #banner{
+        height: 673px;
+        //background: greenyellow;
+        border: 1px solid #ccc;
+        //banner左边部分
+        .banner_l{
+            width: 250px;
+            height: 673px;
+            color: #333;
+            //background: olive;
+            ol{
+               width: 245px;
+               height: 54px;
+               background: #333333;
+               color: #fff; 
+               font-size: 18px;
+               padding-left: 20px;
+               box-sizing: border-box;
+               line-height: 54px;
+            }
+            ul li{
+                padding-left: 20px;
+                box-sizing: border-box;
+                height: 46px;
+                line-height: 46px;
+                color: #333;
+                &:hover{
+                    background: #dc0f50;
+                    color: #fff;
+                }
+            }
+            
+        }
+        //banner中边部分
+        .banner_m{
+            width: 730px;
+            height: 673px;
+            //background: violet;
+            ul li{
+                height: 54px;
+                float: left;
+                margin-left: 25px;
+                line-height: 54px;
+                font-size: 18px;
+                a:hover{
+                    color: #dc0f50;
+                }
+            }
+        }
+        //banner右边部分
+        .banner_r{
+            width: 210px;
+            height: 673px;
+//          background: green;
+            padding-top: 54px;
+            box-sizing: border-box;
+            //banner右边部分 上面部分
+            .banner_r_t{
+                height: 206px;
+                border: 1px solid #ccc;
+                ul li{
+                    text-align: center;
+                    &:nth-child(1){
+                        margin: 0 auto;
+                        width: 40px;
+                        height: 40px;
+                        background: url("img/dome_07.png") no-repeat;
+                        padding-top: 25px;
+                    }
+                    &:nth-child(2){
+                        margin-top: 18px;
+                        margin-bottom: 30px;
+                    }
+                    &:nth-child(3){
+                        width: 160px;
+                        height: 45px;
+                        line-height: 45px;
+                        background: #dc0f50;
+                        margin: 0 auto;
+                    }
+                    &:nth-child(4){
+                        font-size: 12px;
+                    }
+                }
+            }
+             //banner右边部分 中间部分
+            .banner_r_m{
+                height: 206px;
+                //background: yellowgreen;
+                border: 1px solid #ccc;
+                text-align: center;
+                padding-top: 20px;
+                box-sizing: border-box;
+                p {
+                    .tel{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background: url("img/mobile1.png") no-repeat;
+                    }
+                    span:nth-child(2){
+                        font-size: 24px;
+                        color: #666;
+                        font-weight: bold;
+                    }
+                }
+                ul li{
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    float: left;
+                    .icon1{
+                        display: inline-block;
+                        width: 26px;
+                        height: 17px;
+                        background: url("img/icon_2.png") no-repeat;
+                        &:hover{
+                           background: url("img/icon_2.png") no-repeat -28px 0;
+                        }
+                    }
+                    .icon2{
+                        display: inline-block;
+                        width: 26px;
+                        height: 23px;
+                        background: url("img/icon_2.png") no-repeat 0 -17px;
+                        &:hover{
+                           background: url("img/icon_2.png") no-repeat -28px -17px; 
+                        }
+                    }
+                    .icon3{
+                        display: inline-block;
+                        width: 27px;
+                        height: 20px;
+                        background: url("img/icon_2.png") no-repeat 0 -40px;
+                        &:hover{
+                            background: url("img/icon_2.png") no-repeat -28px -40px;
+                        }
+                    }
+                    .icon4{
+                        display: inline-block;
+                        width: 25px;
+                        height: 20px;
+                        background: url("img/icon_2.png") no-repeat 0 -60px;
+                        &:hover{
+                          background: url("img/icon_2.png") no-repeat -28px -60px;  
+                        }
+                    }
+                    .font{
+                        display: inline-block;
+                        width: 40px;
+                        color: #333;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                    
+                }
+                
+             
+        }
+        //banner右边部分 下面部分   ****
+        .banner_r_b{
+            height: 200px;
+            background: darkolivegreen;
+            border-top: 4px solid #dc0f50;
+//          div img{
+//              display: inline-block;
+//              width: 210px;
+//              height: 210px;
+//          }
+        }
+        
+      }
+    }
+    
+    
+    #main{
+        height: 3100px;
+        background: gray;
+    }
+    #link{
+        height: 300px;
+        background: violet;
+    }
+    #footer{
+        height: 70px;
+        background: #3C3C3C;
+    }
+    
+}
