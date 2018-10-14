@@ -1,0 +1,32 @@
+.lunbo1 #marquee1 {
+	width: 1000px;
+	height: 200px;
+	overflow: hidden;
+	margin: 50px;
+	position: relative;
+}
+
+.lunbo1 #marquee1 li {
+	float: left;
+	width: 180px;
+	border: 1px solid #ddd;
+	padding: 9px;
+}
+
+.lunbo1 #marquee1 li img {
+	display: block;
+	width: 180px;
+	height: 180px;
+}
+
+.lunbo1 .g_prev {
+	position: absolute;
+	left: 88px;
+	top: 24%;
+}
+
+.lunbo1 .g_next {
+	position: absolute;
+	right: 183px;
+	top: 24%;
+}

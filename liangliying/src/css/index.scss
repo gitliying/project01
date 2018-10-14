@@ -1,114 +1,56 @@
 @charset "utf-8";
-
 #jyh{
     width: 100%;
     height: 4320px;
-    //header部分
-    #header{
-        height: 35px;
-        background: #e5e5e5;
-        color: #7979a9;
-        font-size: 12px;
-        .header_l{
-            line-height: 35px;
-            a:hover{
-            color: red;
-            text-decoration: underline;
-            } 
-        }
-        .header_r ul li{
-            float: left;
-            margin-right: 30px;
-            line-height: 35px;
-            a:hover{
-                color: red;
-                text-decoration: underline;
-            }
-             //有右边框的span
-            .border_r{
-                padding-right: 20px;
-                box-sizing: border-box;
-                border-right: 1px solid #7979a9;
-            }
-        }
-    }
-    
-    //logo部分
-    #logo{
-        height: 142px;
-        //logo左边
-        .logo_l{
-            width: 260px;
-            height: 142px;
-            background: #fff;
-            line-height: 142px;
-            text-align: center;
-        }
-        //logo中间搜索部分
-        .logo_m{
-        width: 515px;
-        height: 142px;
-        margin-left: 80px;
-//      background: greenyellow;
-        p{   
-            margin-top: 40px;
-            height: 53px;
-            position: relative;
-            input:nth-child(1){
-                width: 410px;
-                height: 53px;
-                border: 1px solid #dc0f50;
-                position: absolute;
-                left: 0;
-                top: 0;
-                font-size: 20px;
-            }
-            input:nth-child(2){
-                width: 105px;
-                height: 55px;
-                background: #dc0f50;
-                position: absolute;
-                left: 412px;
-                top: 0;
-                color: white;
-            }
-         }
-         div{
-             margin-top: 10px;
-            ul li{
-                float: left;
-                font-size: 14px;
-                color: #ccc;
-                margin-left: 20px;
-                a:hover{
-                    color: red;
+    position: relative;
+    //侧边栏
+    #aside{
+        position: fixed;
+        right: 5px;
+        bottom: 100px;
+        ul{
+            li:nth-child(1){
+               width: 60px;
+               height: 60px;
+               background: url("img/icon_bg.png");
+               margin-left: 50px;
+               position: relative;
+               img{
+                   position: absolute;
+                   right: 100px;
+                    width: 100px;
+                    height: 100px;
+                    display: none;
+                    
                 }
-             }
-         }
-         
-        }
-        //logo右边
-        .logo_r{
-            width: 145px;
-            height: 142px;
-            padding-top: 40px;
-            box-sizing: border-box;
-            margin-left: 160px;
-            p { 
-                width: 130px;
-                height: 54px;
-                border: 1px solid #ccc;
-                line-height: 54px;
-                text-align: center;
-                .img{
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    background: url("img/car_icon.png") no-repeat;
+                &:hover img{
+                    display: block;
+                } 
+            }
+            li:nth-child(2){
+                width: 60px;
+                height: 60px;
+                background: url("img/icon_bg.png") no-repeat 0 -70px;
+                margin-left: 50px;
+                position: relative;
+                img{
+                    position: absolute;
+                    right: 100px;
+                    width: 100px;
+                    height: 100px;
+                    display: none;
                 }
+                &:hover img{
+                    display: block;
+                } 
+            }
+            li:nth-child(3){
+                width: 60px;
+                height: 60px;
+                background: url("img/icon_bg.png") no-repeat 0 -140px;
+                margin-left: 50px; 
             }
         }
-    
     }
     //banner部分
     #banner{
@@ -117,20 +59,11 @@
         border: 1px solid #ccc;
         //banner左边部分
         .banner_l{
-            width: 250px;
-            height: 673px;
+            width: 246px;
+            height: 670px;
             color: #333;
+            border: 1px solid #ccc;
             //background: olive;
-            ol{
-               width: 245px;
-               height: 54px;
-               background: #333333;
-               color: #fff; 
-               font-size: 18px;
-               padding-left: 20px;
-               box-sizing: border-box;
-               line-height: 54px;
-            }
             ul li{
                 padding-left: 20px;
                 box-sizing: border-box;
@@ -149,6 +82,10 @@
             width: 730px;
             height: 673px;
             //background: violet;
+            #box{
+                width: 680px;
+                height: 382px;
+            }
             ul li{
                 height: 54px;
                 float: left;
@@ -165,7 +102,7 @@
             width: 210px;
             height: 673px;
 //          background: green;
-            padding-top: 54px;
+            margin-top: 20px;
             box-sizing: border-box;
             //banner右边部分 上面部分
             .banner_r_t{
@@ -178,7 +115,7 @@
                         width: 40px;
                         height: 40px;
                         background: url("img/dome_07.png") no-repeat;
-                        padding-top: 25px;
+                        margin-top: 25px;
                     }
                     &:nth-child(2){
                         margin-top: 18px;
@@ -186,10 +123,13 @@
                     }
                     &:nth-child(3){
                         width: 160px;
-                        height: 45px;
+                        height: 40px;
                         line-height: 45px;
                         background: #dc0f50;
                         margin: 0 auto;
+                        a{
+                            color: #fff;
+                        }
                     }
                     &:nth-child(4){
                         font-size: 12px;
@@ -202,7 +142,7 @@
                 //background: yellowgreen;
                 border: 1px solid #ccc;
                 text-align: center;
-                padding-top: 20px;
+                padding-top: 30px;
                 box-sizing: border-box;
                 p {
                     .tel{
@@ -212,7 +152,7 @@
                         background: url("img/mobile1.png") no-repeat;
                     }
                     span:nth-child(2){
-                        font-size: 24px;
+                        font-size: 20px;
                         color: #666;
                         font-weight: bold;
                     }
@@ -272,13 +212,38 @@
         //banner右边部分 下面部分   ****
         .banner_r_b{
             height: 200px;
-            background: darkolivegreen;
-            border-top: 4px solid #dc0f50;
-//          div img{
-//              display: inline-block;
-//              width: 210px;
-//              height: 210px;
-//          }
+//          background: darkolivegreen;
+            border-top: 2px solid #dc0f50;
+            p{
+                margin-top: 10px;
+            }
+            ul{
+                margin-top: 25px;
+                li{
+                    float: left;
+                    a{
+                        text-align: center;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            display: block;
+                            margin-left: 4px;
+                        }
+                        span{
+                            display: inline-block;
+                            width: 100px;
+                            height: 28px;
+                            background: #dc0f50;
+                            line-height: 28px;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #fff;
+                            margin-top: 10px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+            } 
         }
         
       }
@@ -288,14 +253,76 @@
     #main{
         height: 3100px;
         background: gray;
-    }
-    #link{
-        height: 300px;
-        background: violet;
-    }
-    #footer{
-        height: 70px;
-        background: #3C3C3C;
+        .lunbo1{
+            height: 330px;
+//          background: yellowgreen;
+            .lunbo1_t{
+                height: 30px;
+                h2{
+                    display: inline-block;
+                    font-size: 24px;
+                    color: #333;
+                    line-height: 30px;
+                    padding-right: 20px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .lunbo2{
+            height: 550px;
+            background: orange;
+            .lunbo2_t{
+                height: 40px;
+                line-height: 40px;
+                h3{
+                    margin-left: 10px;
+                    font-size: 20px;
+                    display: inline-block;
+                }
+                p{
+                    color: #ccc;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-right: 200px;
+                }
+            }
+            .lunbo2_b{
+                height: 510px;
+                background: violet;
+                .lunbo2_b_l{
+                    width: 280px;
+                    height: 510px;
+                    background: yellowgreen;
+                    .top{
+                        height: 386px;
+//                      background: #008120;
+                    }
+                    .bottom{
+                       height: 124px; 
+                       background: violet;
+                       li{
+                           float: left;
+                           margin: 10px 0 5px 11px;
+                           img{
+                               width: 80px;
+                               height: 30px;
+                           }
+                       }
+                    }
+                }
+                .lunbo2_b_m{
+                    width: 580px;
+                    height: 510px;
+                    background: magenta;
+                } 
+                .lunbo2_b_r{
+                    width: 310px;
+                    height: 510px;
+                    background: firebrick;
+                }
+
+            } 
+        }
     }
     
 }

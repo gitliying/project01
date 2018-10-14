@@ -1,0 +1,67 @@
+#box2{
+	width: 580px;
+	height: 382px;
+	margin: 10px auto;
+	position: relative;
+}	
+li{
+	list-style: none;
+}
+#box2>*{
+	position: absolute;
+}
+#box2>ul>li{
+	position: absolute;
+}
+#box2>ul>li img{
+	width: 580px;
+	height: 382px;
+}
+#box2 ol{
+	left: 45%;
+	bottom: 26px;
+}
+#box2 ol>li{
+	width: 40px;
+	height: 30px;
+	float: left;
+}
+#box2 ol span{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #ccc;
+	display: block;
+	cursor: pointer;
+	border: 1px solid gray;
+	line-height: 25px;
+	text-align: center;
+}
+#box2 ol .selected{
+	background: #dc0f50;
+}
+/*左右按钮*/
+#box2 #posi_ctrl{
+	position: absolute;
+	top: 50%;
+	width: 310px;
+	height: 35px;
+	margin-top:-17px ;
+	/*background: red;*/
+	z-index: 5;
+	cursor: pointer;
+}
+#box2 #posi_ctrl span{
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	
+}
+#box #posi_ctrl #prev2{
+	left: 33px;
+	background: url("../img/prev_bg.png");
+}
+ #box #posi_ctrl #next2{
+	right: -380px;
+	background: url("../img/next_bg.png");
+}
