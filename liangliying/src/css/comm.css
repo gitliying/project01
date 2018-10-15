@@ -1,7 +1,7 @@
-#jyh {
+/*#jyh {
   width: 100%;
   height: 4320px;
-}
+}*/
 #jyh #header {
   height: 35px;
   background: #e5e5e5;
@@ -100,10 +100,10 @@
   background: url("img/car_icon.png") no-repeat;
 }
 #jyh #nav {
-  height: 46px;
-  border-bottom: 2px solid #dc0f50;
+  height: 560px;
+  border-top: 2px solid #dc0f50;
 }
-#jyh #nav ol {
+/*#jyh #nav ol {
   width: 250px;
   height: 46px;
   background: #333;
@@ -120,7 +120,7 @@
 }
 #jyh #nav ul li a:hover {
   color: #dc0f50;
-}
+}*/
 /*脚部*/
 #jyh #link {
   height: 300px;
@@ -252,5 +252,55 @@
 #jyh #footer p a:hover {
   color: #fff;
 }
+
+
+/*aside*/
+#jyh #aside {
+  position: fixed;
+  right: 5px;
+  bottom: 100px;
+}
+#jyh #aside ul li:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  background: url("img/icon_bg.png");
+  margin-left: 50px;
+  position: relative;
+}
+#jyh #aside ul li:nth-child(1) img {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+#jyh #aside ul li:nth-child(1):hover img {
+  display: block;
+}
+#jyh #aside ul li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  background: url("img/icon_bg.png") no-repeat 0 -70px;
+  margin-left: 50px;
+  position: relative;
+}
+#jyh #aside ul li:nth-child(2) img {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+#jyh #aside ul li:nth-child(2):hover img {
+  display: block;
+}
+#jyh #aside ul li:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  background: url("img/icon_bg.png") no-repeat 0 -140px;
+  margin-left: 50px;
+}
+
+
 
 /*# sourceMappingURL=index.css.map */

@@ -252,9 +252,10 @@
     
     #main{
         height: 3100px;
-        background: gray;
+//      background: gray;
+        //左右滚动轮播
         .lunbo1{
-            height: 330px;
+            height: 380px;
 //          background: yellowgreen;
             .lunbo1_t{
                 height: 30px;
@@ -265,6 +266,58 @@
                     line-height: 30px;
                     padding-right: 20px;
                     margin-left: 5px;
+                }
+            }
+            #goodlists{
+                li{
+                    width: 180px;
+                    height: 260px;
+                    a{
+                        display: inline-block;
+                        width: 180px;
+                        height: 260px;
+                        position: relative;
+                        span{
+                            display: inline-block;
+                            width: 60px;
+                            height: 27px;
+                            background: #dc6c8f;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 27px;
+                            position: absolute;
+                            right: 0;
+                            bottom: 80px;
+                        }
+                        .left{
+                            width: 110px;
+                            font-size: 12px;
+                            margin-top: 15px;
+                            b{
+                                display: block;
+                                color: #333;
+                                &:hover{
+                                    color: #DC0F50;
+                                }
+                            }
+                            i:nth-child(2){
+                                color: red;
+                            }
+                            i:nth-child(3){
+                                text-decoration: line-through;
+                                color: #ccc;
+                            }
+                        }
+                        .right{
+                            width: 60px;
+                            height: 60px;
+                            background: red;
+                            color: white;
+                            margin-top: 15px;
+                            font-size: 22px;
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
@@ -322,6 +375,22 @@
                 }
 
             } 
+        }
+        .lunbo3{
+            height: 560px;
+            background: lightskyblue;
+        }
+        .lunbo4{
+            height: 560px;
+            background: lavender;
+        }
+        .lunbo5{
+            height: 560px;
+            background: yellowgreen;
+        }
+        .lunbo6{
+            height: 490px;
+            background: lightskyblue;
         }
     }
     

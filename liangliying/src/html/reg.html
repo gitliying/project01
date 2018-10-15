@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/comm.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reg.css"/>
+	</head>
+	<body>
+		<div id="jyh">
+			<!--侧边栏-->
+			<div id="aside">
+				<ul>
+					<li>
+						<img class="phone" src="../img/ewm011.jpg" />
+					</li>
+					<li>
+						<img class="weixin" src="../img/ewm011.jpg" />
+					</li>
+					<li id="to_top"></li>
+					<li><img src="../img/客服.jpg" /></li>
+				</ul>
+			</div>
+			<div id="header">
+				<div class="container">
+					<div class="header_l fl">
+						<a>收藏</a>
+					</div>
+					<div class="header_r fr">
+						<ul class="fl">
+							<li>
+								<a href="">
+									<span>首页</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>请登录</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="border_r">免费注册</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>购物车 &nbsp;&nbsp;0 &nbsp;&nbsp;件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>我的家有</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>可用优惠券 &nbsp;&nbsp;0 &nbsp;&nbsp;张</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="border_r">我的收藏 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>手机版</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>微信版</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="logo">
+				<div class="container">
+					<div class="logo_l fl">
+						<img src="../img/logo1.png" />
+					</div>
+					<div class="logo_m fl">
+						<p>
+							<input type="text" id="secret" value="" />
+							<input type="button" id="btn" value="搜索" />
+						</p>
+						<div>
+							<ul>
+								<li>
+									<a href=""><span>新榜样</span></a>
+								</li>
+								<li>
+									<a href=""><span>同仁堂</span></a>
+								</li>
+								<li>
+									<a href=""><span>棉记</span></a>
+								</li>
+								<li>
+									<a href=""><span>歌丽姬宝</span></a>
+								</li>
+								<li>
+									<a href=""><span>4层抽纸30包</span></a>
+								</li>
+								<li>
+									<a href=""><span>多喜来</span></a>
+								</li>
+								<li>
+									<a href=""><span>健安喜</span></a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="logo_r fl">
+						<p>
+							<span class="img"></span>
+							<span>我的购物车</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="nav">
+				<div class="container">
+					<div id="reg">
+						<div class="left fl">
+							<ul>
+								<li>
+									<b>
+										<i>*</i><span>手机号</span>
+									</b>
+									<input type="text" id="txtPhoneNo" value="" placeholder="请输入11位有效手机号码">
+									<span id="txtPhoneNoInfo"></span>
+								</li>
+								<li>
+									<b>
+										<i>*</i><span>图片验证码</span>
+									</b>
+									<input id="txtPicCode" class="short" type="text" placeholder="请输入图片验证码">
+									<button id="btnCode" class="btnCode"></button>
+									<span id="comfCode"></span>
+								</li>
+								<li>
+									<b>
+										<i>*</i><span>设置密码</span>
+									</b>
+									<input id="txtPass" type="password" value="" placeholder="请输入6-16个字符，不能添加空格哦">
+									<span id="txtPassInfo"></span>
+								</li>
+								<li>
+									<b>
+										<i>*</i><span>确认密码</span>
+									</b>
+									<input id="txtPassConfirm" type="password" value="" placeholder="请输入确认密码">
+									<span id="txtPassConfirmInfo"></span>
+								</li>
+								<li>
+									<b>
+										<i>*</i><span>验证码</span>
+									</b>
+									<input id="txtValidCode" class="short" type="text" value="" class="text">
+									<button>获取验证码</button>
+								</li>
+							</ul>
+							<div class="leftBottom">
+								<p>
+								<input type="checkbox"/>
+								<span>我已阅读并同意《会员注册协议》和《隐私保护政策》</span>
+								</p>
+								<p class="regBtn" id="regBtn">注册</p>
+								<p><a>我已注册，立即登录</a></p>
+							</div>
+						</div>
+						<div class="right fr">
+							<a>
+								<img src="../img/login001.jpg"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+				
+			<div id="link">
+				<div class="container">
+					<div class="link_t">
+						<ul>
+							<li class="li1 fl">
+								<p>100%正品保障</p>
+								<i>质量有保障</i>
+							</li>
+							<li class="li2 fl">
+								<p>在线上支付 全场包邮</p>
+								<i>送货上门</i>
+							</li>
+							<li class="li3 fl">
+								<p>支持银联刷卡付款</p>
+								<i>付款更安全</i>
+							</li>
+							<li class="li4 fl">
+								<p>货到付款 开箱验货</p>
+								<i>满意才收货</i>
+							</li>
+							<li class="li5 fl">
+								<p>7x24小时人工服务</p>
+								<i>微笑无时无刻 4008-678-210</i>
+							</li>
+						</ul>
+					</div>
+					<div class="link_b">
+						<div class="link_b_l fl">
+							<ul>
+								<li class="font_header">
+									<a>关于我们</a>
+								</li>
+								<li>
+									<a>公司介绍</a>
+								</li>
+								<li>
+									<a>招聘信息</a>
+								</li>
+								<li>
+									<a>联系我们</a>
+								</li>
+								<li>
+									<a>用户隐私条款</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="font_header">
+									<a>订购指南</a>
+								</li>
+								<li>
+									<a>交易条款</a>
+								</li>
+								<li>
+									<a>注册/购物流程</a>
+								</li>
+								<li>
+									<a>退/换货</a>
+								</li>
+								<li>
+									<a>积分说明</a>
+								</li>
+								<li>
+									<a>发票指南</a>
+								</li>
+								<li>
+									<a>会员制度说明</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="font_header">
+									<a>配送服务</a>
+								</li>
+								<li>
+									<a>配送区域</a>
+								</li>
+								<li>
+									<a>配送时间</a>
+								</li>
+								<li>
+									<a>验货与签收</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="font_header">
+									<a>支付方式</a>
+								</li>
+								<li>
+									<a>网上支付</a>
+								</li>
+								<li>
+									<a>货到付款</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="font_header">
+									<a>合作专区</a>
+								</li>
+								<li>
+									<a>成为供应商</a>
+								</li>
+								<li>
+									<a>供应商系统</a>
+								</li>
+								<li>
+									<a>合作伙伴</a>
+								</li>
+							</ul>
+						</div>
+						<div class="link_b_r fl">
+							<ul>
+								<li>
+									<img src="../img/ewm011.jpg" />
+									<span>家有购物微信</span>
+								</li>
+								<li>
+									<img src="../img/ewm022.png" />
+									<span>家有购物APP</span>
+								</li>
+							</ul>
+							<p>
+								<b></b>
+								<span>4008-678-210</span>
+								<i>客服 7x24小时 (全年无休)</i>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="container">
+					<p>
+						<a> 友情链接： </a>
+						<a>南京手机报价</a>
+						<a>竞拍</a>
+						<a>奥莱购</a>
+						<a>商品百科</a>
+					</p>
+					<p>
+						Copyright © 2008-2013 jyh.com 家有购物集团有限公司北京分公司 版权所有 京ICP备14011161号-5 增值电信业务经营许可证：黔B2-20120036
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../lib/jquery-1.4.2.min.js"></script>
+<script src="../js/reg.js"></script>
