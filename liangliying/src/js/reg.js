@@ -58,9 +58,10 @@ function phone(){
 					var tel = data[i].tel;
 					if(val == data[i].tel){
 						//console.log(tel);
-						$('#txtPhoneNoInfo').html('该手机号已被注册，请更换一个！').css('color','red');
+						$('#txtPhoneNoInfo').html('手机号已被注册，请换一个！').css('color','red');
 						return;
 					}
+					
 					else{
 						$('#txtPhoneNoInfo').html('该手机号可用！').css('color','green');
 					}
@@ -111,8 +112,7 @@ $('#regBtn').click(function(){
 	}else{
 		alert('请先完善信息！');
 	}
-	
-	//注册成功，存入数据库   插入数据未完成
+	//注册成功，存入数据库   插入数据未完成(OK)
 	function save(){
 		$.ajax({
 			type:"post",
@@ -134,13 +134,14 @@ $('#regBtn').click(function(){
 						'pass':pass
 					}
 				});
-				console.log(cid);
-				console.log(tel);
-				console.log(pass);
+//				console.log(cid);
+//				console.log(tel);
+//				console.log(pass);
 			}
 		});
 	}
-save();
+	//执行插入数据	
+	save();
 	
 });
 

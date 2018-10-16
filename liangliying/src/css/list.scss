@@ -1,0 +1,194 @@
+#nav {
+//  height: 600px;
+    position: relative;
+    #goodlist {
+        display: none;
+        position: absolute;
+        top: 46px;
+        background: #fff;
+        .g_tab {
+            width: 248px;
+            height: 570px;
+            border: 1px solid #ccc;
+            li {
+                margin-left: 0;
+                width: 250px;
+                height: 40px;
+                padding-left: 20px;
+                box-sizing: border-box;
+                &:hover {
+                    background: #dc0f50;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+//content部分
+#content{
+    width: 100%;
+    height: 1100px;
+    .left{
+        width: 850px;
+        height: 1100px;
+        margin: 20px 0 20px 0;
+        .top{
+            height: 160px;
+//          background: violet;
+            .header{
+                border-bottom: 1px dashed #ccc;
+                height: 58px;  
+//              background: blanchedalmond;
+                ul{
+                    line-height: 58px;
+                    li{
+                        float: left;
+                        margin-left: 25px;
+                    }
+                    li:nth-child(1){
+                        margin-left: 0;
+                        padding-left: 10px;
+                        width: 80px;
+                        background: #f1f1f1;
+                    }
+                }
+              
+            }
+            .brands{
+                height: 58px;
+//              background: honeydew;
+//              overflow: hidden;
+                ul{
+                    line-height: 58px;
+                   li{
+                        float: left;
+                        margin-left: 25px;
+                    }
+                    li:nth-child(1){
+                        margin-left: 0;
+                        padding-left: 10px;
+                        width: 80px;
+                        background: #f1f1f1;
+                    }
+                    #more{
+                        a{
+                            position: relative;
+                            i{
+                                position: absolute;
+                                right: -22px;
+                                top: 6px;
+                                display: inline-block;
+                                width: 10px;
+                                height: 10px;
+                                background: url("../img/more.png") no-repeat 0 -32px; 
+                            }
+                            
+                        }
+                    } 
+                }
+                #more_lists{
+                    padding-left: 90px;
+                    box-sizing: border-box;
+                    display: none;
+                    line-height: 58px;
+                   li{
+                       float: left;
+                       margin-left: 25px;
+                   }
+                   #less{
+                       float: right;
+                       margin-right: 70px;
+                       a{
+                            position: relative;
+                            i{
+                                position: absolute;
+                                right: -22px;
+                                top: 6px;
+                                display: inline-block;
+                                width: 10px;
+                                height: 10px;
+                                background: url("../img/more.png") no-repeat; 
+                            }
+                            
+                        }
+                   } 
+                }
+                
+            }
+        }
+        .list{
+            .list_top{
+                height: 58px;
+//              background: bisque;
+//              border: 1px solid #ccc;
+                line-height: 58px;
+                ul{
+                    li{
+                        float: left;
+                        margin-left: 25px;
+                    }
+                    .comfPrice{
+                        position: relative;
+                        input{
+                            color: #333;
+                            display: inline-block;
+                            width: 53px;
+                            height: 25px;
+                            border: 1px solid #ccc;
+                            margin-left: 10px;
+                        }
+                        #comfirm{
+                            text-align: center;
+                            background: #dc0f50;
+                            border: 0;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .list_main{
+                #productList{
+                    li{ 
+                        float: left;
+//                      position: relative;
+                        width: 210px;
+                        height: 250px;
+                        margin-bottom: 25px;
+                        a{
+                            img{
+                                width: 200px;
+                                height: 200px;
+                            }
+                            span{
+                                display: block;
+                               font-size: 12px; 
+                            }
+                            
+                        }
+                        i:nth-child(2){
+                            font-size: 16px;
+                            color: red;
+                        }
+                        i:nth-child(3){
+                            margin-left: 107px;
+                            color: #ccc;
+                            text-decoration: line-through;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+    .right{
+        width: 230px;
+        height: 1100px;
+    }
+}

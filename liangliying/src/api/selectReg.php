@@ -7,7 +7,7 @@
 	include 'connect.php';
 	
 	//写查询语句
-	$sql='select tel from reg';
+	$sql='select tel,password from reg';
 	
 	//执行查询语句
 	$conn->query("SET NAMES utf8");

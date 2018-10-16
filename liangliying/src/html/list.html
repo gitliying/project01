@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/comm.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/reg.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/listcomm.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
 	</head>
+
 	<body>
 		<div id="jyh">
 			<!--侧边栏-->
@@ -125,66 +127,194 @@
 			</div>
 			<div id="nav">
 				<div class="container">
-					<div id="reg">
-						<div class="left fl">
+					<ol class="fl" id="nav_header">
+						<li>全部商品分类</li>
+					</ol>
+					<ul class="fl">
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">TV直播</a>
+						</li>
+						<li>
+							<a href="">品牌惠</a>
+						</li>
+						<li>
+							<a href="">家有购物APP</a>
+						</li>
+						<li>
+							<a href="">家有尊享</a>
+						</li>
+					</ul>
+					<div id="goodlist">
+						<ul class="g_tab">
+							<li>
+								<a href="">服装服饰</a>
+							</li>
+							<li>
+								<a href="">食品 饮料</a>
+							</li>
+							<li>
+								<a href="">生活家居</a>
+							</li>
+							<li>
+								<a href="">美妆个护</a>
+							</li>
+							<li>
+								<a href="">箱包配饰</a>
+							</li>
+							<li>
+								<a href="">海外购</a>
+							</li>
+							<li>
+								<a href="">运动家纺</a>
+							</li>
+							<li>
+								<a href="">布艺家纺</a>
+							</li>
+							<li>
+								<a href="">品质厨房</a>
+							</li>
+							<li>
+								<a href="">厨房电器</a>
+							</li>
+							<li>
+								<a href="">生活电器</a>
+							</li>
+							<li>
+								<a href="">3C数码</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div id="content">
+				<div class="container">
+					<div class="left">
+						<h2>全部商品</h2>
+						<div class="top">
+						<div class="header">
 							<ul>
-								<li>
-									<b>
-										<i>*</i><span>手机号</span>
-									</b>
-									<input type="text" id="txtPhoneNo" value="" placeholder="请输入11位有效手机号码">
-									<span id="txtPhoneNoInfo"></span>
-								</li>
-								<li>
-									<b>
-										<i>*</i><span>图片验证码</span>
-									</b>
-									<input id="txtPicCode" class="short" type="text" placeholder="请输入图片验证码">
-									<button id="btnCode" class="btnCode"></button>
-									<span id="comfCode"></span>
-								</li>
-								<li>
-									<b>
-										<i>*</i><span>设置密码</span>
-									</b>
-									<input id="txtPass" type="password" value="" placeholder="请输入6-16个字符，不能添加空格哦">
-									<span id="txtPassInfo"></span>
-								</li>
-								<li>
-									<b>
-										<i>*</i><span>确认密码</span>
-									</b>
-									<input id="txtPassConfirm" type="password" value="" placeholder="请输入确认密码">
-									<span id="txtPassConfirmInfo"></span>
-								</li>
-								<li>
-									<b>
-										<i>*</i><span>验证码</span>
-									</b>
-									<input id="txtValidCode" class="short" type="text" value="" class="text">
-									<button>获取验证码</button>
-								</li>
+								<li><a>分类</a></li>
+								<li><a>全部</a></li>
+								<li><a>家居家具</a></li>
+								<li><a>生活家居</a></li>
+								<li><a>收纳</a></li>
+								<li><a>创意家居</a></li>
+								<li><a>清洁用品</a></li>
 							</ul>
-							<div class="leftBottom">
-								<p>
-								<input type="checkbox"/>
-								<span>我已阅读并同意《会员注册协议》和《隐私保护政策》</span>
-								</p>
-								<p class="regBtn" id="regBtn">注册</p>
-								<p><a href="login.html">我已注册，立即登录</a></p>
-							</div>
 						</div>
-						<div class="right fr">
-							<a>
-								<img src="../img/login001.jpg"/>
-							</a>
+						<div class="brands">
+							<ul>
+								<li><a>品牌</a></li>
+								<li><a>全部</a></li>
+								<li><a>雅客集</a></li>
+								<li><a>施美乐</a></li>
+								<li><a>innes英尼斯</a></li>
+								<li><a>棉记</a></li>
+								<li><a>日沈生活</a></li>
+								<li><a>品牌</a></li>
+								<li><a>living more</a></li>
+								<li id="more"><a>更多<i></i></a></li>
+							</ul>
+							<ol id="more_lists">
+								<li><a>雅客集</a></li>
+								<li><a>施美乐</a></li>
+								<li><a>innes英尼斯</a></li>
+								<li><a>棉记</a></li>
+								<li><a>日沈生活</a></li>
+								<li><a>雅客集</a></li>
+								<li><a>施美乐</a></li>
+								<li><a>innes英尼斯</a></li>
+								<li><a>棉记</a></li>
+								<li><a>日沈生活</a></li>
+								<li><a>雅客集</a></li>
+								<li><a>施美乐</a></li>
+								<li><a>innes英尼斯</a></li>
+								<li><a>棉记</a></li>
+								<li><a>日沈生活</a></li>
+								<li id="less"><a>收起<i></i></a></li>
+							
+							</ol>
 						</div>
 					</div>
+					<div class="list">
+						<div class="list_top">
+							<ul>
+								<li>综合</li>
+								<li>销量</li>
+								<li>人气</li>
+								<li>价格</li>
+								<li class="comfPrice">
+									<input type="text" id="minPrice" value="" placeholder="￥">
+									<span>-</span>
+									<input type="text" id="maxPrice" value="" placeholder="￥">
+									<input type="text" id="comfirm" value="确认" />
+								</li>
+							</ul>
+						</div>
+						<div class="list_main">
+							<ul id="productList">
+								<li>
+									<a href=""><img src="../img/imglists/g (1).jpg" alt="" />
+										<span>content脐美人排毒贴健康轻松组</span>
+									</a>
+									<i>￥249</i>
+									<i>￥359</i>
+									<p>月销3件</p>
+								</li>
+								<li>
+									<a href=""><img src="../img/imglists/g (1).jpg" alt="" />
+										<span>content脐美人排毒贴健康轻松组</span>
+									</a>
+									<i>￥249</i>
+									<i>￥359</i>
+									<p>月销3件</p>
+								</li>
+								<li>
+									<a href=""><img src="../img/imglists/g (1).jpg" alt="" />
+										<span>content脐美人排毒贴健康轻松组</span>
+									</a>
+									<i>￥249</i>
+									<i>￥359</i>
+									<p>月销3件</p>
+								</li>
+								<li>
+									<a href=""><img src="../img/imglists/g (1).jpg" alt="" />
+										<span>content脐美人排毒贴健康轻松组</span>
+									</a>
+									<i>￥249</i>
+									<i>￥359</i>
+									<p>月销3件</p>
+								</li>
+								<li>
+									<a href=""><img src="../img/imglists/g (1).jpg" alt="" />
+										<span>content脐美人排毒贴健康轻松组</span>
+									</a>
+									<i>￥249</i>
+									<i>￥359</i>
+									<p>月销3件</p>
+								</li>
+								<li>
+									<a href=""><img src="../img/imglists/g (1).jpg" alt="" />
+										<span>content脐美人排毒贴健康轻松组</span>
+									</a>
+									<i>￥249</i>
+									<i>￥359</i>
+									<p>月销3件</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="choosePage"></div>
+					</div>
+					<div class="right"></div>
+				
 				</div>
 			</div>
 
-			
-				
 			<div id="link">
 				<div class="container">
 					<div class="link_t">
@@ -329,6 +459,7 @@
 			</div>
 		</div>
 	</body>
+
 </html>
 <script src="../lib/jquery-1.4.2.min.js"></script>
-<script src="../js/reg.js"></script>
+<script src="../js/list.js"></script>

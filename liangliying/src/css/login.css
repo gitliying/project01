@@ -1,0 +1,98 @@
+#login {
+  padding: 60px 70px 30px 70px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#login .left {
+  width: 450px;
+  height: 380px;
+}
+#login .right {
+  width: 470px;
+  height: 390px;
+}
+#login .right .top {
+  width: 470px;
+  height: 40px;
+}
+#login .right .top a {
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+#login .right .top a .checked {
+  padding-bottom: 6px;
+  font-size: 20px;
+  color: #dc0f50;
+  border-bottom: 2px solid #dc0f50;
+}
+#login .right .bottom .active {
+  padding: 70px 70px;
+  border: 1px solid #ccc;
+}
+#login .right .bottom .active ul li {
+  color: #666;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  line-height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#login .right .bottom .active ul li b {
+  position: absolute;
+  right: -98px;
+  top: 0px;
+  font-weight: 300;
+}
+#login .right .bottom .active ul li i {
+  position: absolute;
+  left: 11px;
+  top: 11px;
+}
+#login .right .bottom .active ul li input {
+  margin-left: 40px;
+  font-size: 14px;
+}
+#login .right .bottom .active ul li:nth-child(1) i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("img/icon01.png") no-repeat;
+}
+#login .right .bottom .active ul li:nth-child(1) img {
+  display: none;
+}
+#login .right .bottom .active ul li:nth-child(2) i {
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  background: url("img/icon02.png") no-repeat;
+}
+#login .right .bottom .active ul li:nth-child(2) span {
+  position: absolute;
+  right: -85px;
+  top: 0px;
+}
+#login .right .bottom .active ul li:nth-child(3) {
+  border: 0px;
+}
+#login .right .bottom .active ul li:nth-child(3) input {
+  margin-left: 0;
+}
+#login .right .bottom .active ul li:nth-child(3) a:hover {
+  color: #c00;
+}
+#login .right .bottom .active p {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  background: #dc0f50;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=login.css.map */

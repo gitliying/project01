@@ -1,0 +1,306 @@
+/*#jyh {
+  width: 100%;
+  height: 4320px;
+}*/
+#jyh #header {
+  height: 35px;
+  background: #e5e5e5;
+  color: #7979a9;
+  font-size: 12px;
+}
+#jyh #header .header_l {
+  line-height: 35px;
+}
+#jyh #header .header_l a:hover {
+  color: red;
+  text-decoration: underline;
+}
+#jyh #header .header_r ul li {
+  float: left;
+  margin-right: 30px;
+  line-height: 35px;
+}
+#jyh #header .header_r ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+#jyh #header .header_r ul li .border_r {
+  padding-right: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #7979a9;
+}
+#jyh #logo {
+  height: 142px;
+}
+#jyh #logo .logo_l {
+  width: 260px;
+  height: 142px;
+  background: #fff;
+  line-height: 142px;
+  text-align: center;
+}
+#jyh #logo .logo_m {
+  width: 515px;
+  height: 142px;
+  margin-left: 80px;
+}
+#jyh #logo .logo_m p {
+  margin-top: 40px;
+  height: 53px;
+  position: relative;
+}
+#jyh #logo .logo_m p input:nth-child(1) {
+  width: 410px;
+  height: 53px;
+  border: 1px solid #dc0f50;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+}
+#jyh #logo .logo_m p input:nth-child(2) {
+  width: 105px;
+  height: 55px;
+  background: #dc0f50;
+  position: absolute;
+  left: 412px;
+  top: 0;
+  color: white;
+}
+#jyh #logo .logo_m div {
+  margin-top: 10px;
+}
+#jyh #logo .logo_m div ul li {
+  float: left;
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 20px;
+}
+#jyh #logo .logo_m div ul li a:hover {
+  color: red;
+}
+#jyh #logo .logo_r {
+  width: 145px;
+  height: 142px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  margin-left: 160px;
+}
+#jyh #logo .logo_r p {
+  width: 130px;
+  height: 54px;
+  border: 1px solid #ccc;
+  line-height: 54px;
+  text-align: center;
+}
+#jyh #logo .logo_r p .img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("img/car_icon.png") no-repeat;
+}
+#jyh #nav {
+  height: 46px;
+  border-top: 2px solid #dc0f50;
+}
+#jyh #nav ol {
+  width: 250px;
+  height: 46px;
+  background: #333;
+  color: #fff;
+  line-height: 46px;
+}
+#jyh #nav ul {
+  height: 46px;
+}
+#jyh #nav ul li {
+  float: left;
+  margin-left: 21px;
+  line-height: 46px;
+}
+#jyh #nav ul li a:hover {
+  color: #dc0f50;
+}
+/*脚部*/
+#jyh #link {
+  height: 300px;
+}
+#jyh #link .link_t {
+  height: 80px;
+}
+#jyh #link .link_t ul {
+  overflow: hidden;
+  margin: 18px auto 35px auto;
+}
+#jyh #link .link_t ul .li1 {
+  background: url("img/warrant_icon.png") no-repeat 0 2px;
+}
+#jyh #link .link_t ul .li2 {
+  background: url("img/warrant_icon.png") no-repeat 0 -53px;
+}
+#jyh #link .link_t ul .li3 {
+  background: url("img/warrant_icon.png") no-repeat 0 -108px;
+}
+#jyh #link .link_t ul .li4 {
+  background: url("img/warrant_icon.png") no-repeat 0 -162px;
+}
+#jyh #link .link_t ul .li5 {
+  background: url("img/warrant_icon.png") no-repeat 0 -217px;
+}
+#jyh #link .link_t ul li {
+  border-right: 1px solid #ccc;
+  height: 54px;
+  padding: 3px 25px 0 62px;
+  margin-left: 10px;
+}
+#jyh #link .link_t ul li p {
+  font-size: 16px;
+  color: #333;
+}
+#jyh #link .link_t ul li i {
+  display: block;
+  line-height: 18px;
+  font-size: 12px;
+  color: #999;
+}
+#jyh #link .link_b {
+  height: 220px;
+}
+#jyh #link .link_b .link_b_l {
+  width: 910px;
+  height: 220px;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+#jyh #link .link_b .link_b_l ul {
+  margin-top: 35px;
+  float: left;
+  width: 160px;
+}
+#jyh #link .link_b .link_b_l ul .font_header {
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+#jyh #link .link_b .link_b_l ul li {
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+#jyh #link .link_b .link_b_l ul li a:hover {
+  color: #dc0f50;
+}
+#jyh #link .link_b .link_b_r {
+  width: 200px;
+  height: 220px;
+}
+#jyh #link .link_b .link_b_r ul {
+  margin-top: 35px;
+}
+#jyh #link .link_b .link_b_r ul li {
+  float: left;
+  margin-left: 14px;
+}
+#jyh #link .link_b .link_b_r ul li img {
+  display: block;
+  width: 79px;
+  height: 79px;
+}
+#jyh #link .link_b .link_b_r ul li span {
+  display: inline-block;
+  width: 79px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+}
+#jyh #link .link_b .link_b_r p {
+  text-align: center;
+  margin-top: 20px;
+}
+#jyh #link .link_b .link_b_r p b {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("img/mobile1.png") no-repeat;
+  margin-top: 20px;
+}
+#jyh #link .link_b .link_b_r p span {
+  display: inline-block;
+  font-size: 20px;
+  color: #666;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#jyh #link .link_b .link_b_r p i {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  line-height: 14px;
+  margin-top: -2px;
+}
+#jyh #footer {
+  height: 70px;
+  background: #333;
+}
+#jyh #footer p {
+  line-height: 26px;
+  color: #999;
+  font-size: 12px;
+  padding: 0 5px;
+}
+#jyh #footer p a:hover {
+  color: #fff;
+}
+
+
+/*aside*/
+#jyh #aside {
+  position: fixed;
+  right: 5px;
+  bottom: 100px;
+}
+#jyh #aside ul li:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  background: url("img/icon_bg.png");
+  margin-left: 50px;
+  position: relative;
+}
+#jyh #aside ul li:nth-child(1) img {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+#jyh #aside ul li:nth-child(1):hover img {
+  display: block;
+}
+#jyh #aside ul li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  background: url("img/icon_bg.png") no-repeat 0 -70px;
+  margin-left: 50px;
+  position: relative;
+}
+#jyh #aside ul li:nth-child(2) img {
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+#jyh #aside ul li:nth-child(2):hover img {
+  display: block;
+}
+#jyh #aside ul li:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  background: url("img/icon_bg.png") no-repeat 0 -140px;
+  margin-left: 50px;
+}
+
+
+
+/*# sourceMappingURL=index.css.map */

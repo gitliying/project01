@@ -1,0 +1,168 @@
+#nav {
+  position: relative;
+}
+#nav #goodlist {
+  display: none;
+  position: absolute;
+  top: 46px;
+  background: #fff;
+}
+#nav #goodlist .g_tab {
+  width: 248px;
+  height: 570px;
+  border: 1px solid #ccc;
+}
+#nav #goodlist .g_tab li {
+  margin-left: 0;
+  width: 250px;
+  height: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+#nav #goodlist .g_tab li:hover {
+  background: #dc0f50;
+}
+#nav #goodlist .g_tab li:hover a {
+  color: white;
+}
+#nav #goodlist .g_tab li a {
+  color: #666;
+}
+
+#content {
+  width: 100%;
+  height: 1100px;
+}
+#content .left {
+  width: 850px;
+  height: 1100px;
+  margin: 20px 0 20px 0;
+}
+#content .left .top {
+  height: 160px;
+}
+#content .left .top .header {
+  border-bottom: 1px dashed #ccc;
+  height: 58px;
+}
+#content .left .top .header ul {
+  line-height: 58px;
+}
+#content .left .top .header ul li {
+  float: left;
+  margin-left: 25px;
+}
+#content .left .top .header ul li:nth-child(1) {
+  margin-left: 0;
+  padding-left: 10px;
+  width: 80px;
+  background: #f1f1f1;
+}
+#content .left .top .brands {
+  height: 58px;
+}
+#content .left .top .brands ul {
+  line-height: 58px;
+}
+#content .left .top .brands ul li {
+  float: left;
+  margin-left: 25px;
+}
+#content .left .top .brands ul li:nth-child(1) {
+  margin-left: 0;
+  padding-left: 10px;
+  width: 80px;
+  background: #f1f1f1;
+}
+#content .left .top .brands ul #more a {
+  position: relative;
+}
+#content .left .top .brands ul #more a i {
+  position: absolute;
+  right: -22px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/more.png") no-repeat 0 -32px;
+}
+#content .left .top .brands #more_lists {
+  padding-left: 90px;
+  box-sizing: border-box;
+  display: none;
+  line-height: 58px;
+}
+#content .left .top .brands #more_lists li {
+  float: left;
+  margin-left: 25px;
+}
+#content .left .top .brands #more_lists #less {
+  float: right;
+  margin-right: 70px;
+}
+#content .left .top .brands #more_lists #less a {
+  position: relative;
+}
+#content .left .top .brands #more_lists #less a i {
+  position: absolute;
+  right: -22px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/more.png") no-repeat;
+}
+#content .left .list .list_top {
+  height: 58px;
+  line-height: 58px;
+}
+#content .left .list .list_top ul li {
+  float: left;
+  margin-left: 25px;
+}
+#content .left .list .list_top ul .comfPrice {
+  position: relative;
+}
+#content .left .list .list_top ul .comfPrice input {
+  color: #333;
+  display: inline-block;
+  width: 53px;
+  height: 25px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+#content .left .list .list_top ul .comfPrice #comfirm {
+  text-align: center;
+  background: #dc0f50;
+  border: 0;
+  color: white;
+}
+#content .left .list .list_main #productList li {
+  float: left;
+  width: 210px;
+  height: 250px;
+  margin-bottom: 25px;
+}
+#content .left .list .list_main #productList li a img {
+  width: 200px;
+  height: 200px;
+}
+#content .left .list .list_main #productList li a span {
+  display: block;
+  font-size: 12px;
+}
+#content .left .list .list_main #productList li i:nth-child(2) {
+  font-size: 16px;
+  color: red;
+}
+#content .left .list .list_main #productList li i:nth-child(3) {
+  margin-left: 107px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+#content .right {
+  width: 230px;
+  height: 1100px;
+}
+
+/*# sourceMappingURL=list.css.map */
