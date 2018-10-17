@@ -195,6 +195,12 @@
   background: coral;
   color: #fff;
 }
+#content .left .choosePage .pages li #prevPage:hover {
+  background: coral;
+}
+#content .left .choosePage .pages li #nextPage:hover {
+  background: coral;
+}
 #content .right {
   width: 230px;
   height: 1100px;

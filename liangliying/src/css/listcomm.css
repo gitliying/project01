@@ -259,6 +259,7 @@
   position: fixed;
   right: 5px;
   bottom: 100px;
+  z-index: 10000;
 }
 #jyh #aside ul li:nth-child(1) {
   width: 60px;

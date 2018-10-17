@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/comm.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/listcomm.css" />
+		<link rel="stylesheet" type="text/css" href="../css/goods.css" />
+		<link rel="stylesheet" type="text/css" href="../css/goodsMax.css"/>
 	</head>
+
 	<body>
 		<div id="jyh">
 			<!--侧边栏-->
@@ -125,55 +128,132 @@
 			</div>
 			<div id="nav">
 				<div class="container">
-					<div id="login">
-						<div class="left fl">
-							<a href=""><img src="../img/login001.jpg"/></a>
-						</div>
-						<div class="right fr">
-							<div class="top">
-								<a href=""><i class="checked">用户登录</i></a>
-								<a href=""><i>快捷登录</i></a>
-							</div>
-							<div class="bottom">
-								<!--用户登录-->
-								<div class="active">
-									<ul>
-										<li>
-											<!--<b id="noComftxtUserName"></b>-->
-											<i></i>
-											<input type="text" id="txtUserName" value="" placeholder="请输入11位有效手机号">
-											<b id="comftxtUserName"></b>
-											<!--<img id="comftxtUserName" src="../img/correct_bg.png"/>-->
-										</li>
-										<li>
-											<!--<b id="nocomfTxtPass"></b>-->
-											<i></i>
-											<input type="password" id="txtPass" value="" placeholder="请输入密码">
-											<span id="comfTxtPass"></span>
-										</li>
-										<li>
-											<input name="" type="checkbox" id="ckLogin1">下次自动登录
-											<span id="resetPass"><a>重置密码</a></span>
-											<span class="fr"><a href="reg.html">新用户注册</a></span>
-										</li>
-									</ul>
-									<p id="btnLogin">
-										<a>登 录</a>
-									</p>
-								</div>
-								<!--快捷登录 -->
-								
-							</div>
-							
-						</div>
+					<ol class="fl" id="nav_header">
+						<li>全部商品分类</li>
+					</ol>
+					<ul class="fl">
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">TV直播</a>
+						</li>
+						<li>
+							<a href="">品牌惠</a>
+						</li>
+						<li>
+							<a href="">家有购物APP</a>
+						</li>
+						<li>
+							<a href="">家有尊享</a>
+						</li>
+					</ul>
+					<div id="goodlist">
+						<ul class="g_tab">
+							<li>
+								<a href="">服装服饰</a>
+							</li>
+							<li>
+								<a href="">食品 饮料</a>
+							</li>
+							<li>
+								<a href="">生活家居</a>
+							</li>
+							<li>
+								<a href="">美妆个护</a>
+							</li>
+							<li>
+								<a href="">箱包配饰</a>
+							</li>
+							<li>
+								<a href="">海外购</a>
+							</li>
+							<li>
+								<a href="">运动家纺</a>
+							</li>
+							<li>
+								<a href="">布艺家纺</a>
+							</li>
+							<li>
+								<a href="">品质厨房</a>
+							</li>
+							<li>
+								<a href="">厨房电器</a>
+							</li>
+							<li>
+								<a href="">生活电器</a>
+							</li>
+							<li>
+								<a href="">3C数码</a>
+							</li>
+						</ul>
 					</div>
+				</div>
+
+			</div>
+			<div id="goods">
+				<h2>全部商品</h2>
+				<div class="container">
+					
+					<div class="left">
+						<div class="imgdet wrap">
+					        <!-- 左侧图片列表 -->
+					        <div class="imglist">
+					            <ul>
+					                <li class="active">
+					                    <img src="../img/goods01.jpg" alt="">
+					                </li>
+					                <li>
+					                    <img src="../img/goods02.jpg" alt="">
+					                </li>
+					                <li>
+					                    <img src="../img/goods03.jpg" alt="">
+					                </li>
+					                <li>
+					                    <img src="../img/goods04.jpg" alt="">
+					                </li>
+					                <li>
+					                    <img src="../img/goods05.jpg" alt="">
+					                </li>
+					            </ul>
+					        </div>
+					        <div class="imgpart">
+					            <!-- 图片展示 -->
+					            <div class="pic">
+					                <img src="../img/goods01.jpg" alt="">
+					                <!-- 镜片 -->
+					                <div class="magnify"></div>
+					            </div>
+					            <!-- 放大后的图片, 放大后的图片的尺寸要设置为展示图片的倍数（2倍）-->
+					            <div class="bigpic">
+					                <img src="../img/goods01.jpg" alt="">
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					<div  id="details" class="right fr">
+						<!--<h3>title刺猬紫檀财源滚滚客餐厅大全套</h3>
+						<div>
+							<p>￥4999</p>
+							<p>￥5655</p>
+							<p>月销  &nbsp; 22件</p>
+						</div>
+						<div>
+							<span>购买数量</span>
+							<input type="button" value="-"/><input type="text" placeholder="1"/><input type="button" value="+" />
+						</div>
+						<div class="addtocart">
+							<span>加入购物车</span>
+							<span>立即购买</span>
+							<i>拨打：</i><b>4008-678-888</b><i>可语音下单~</i>
+						</div>-->
+					</div>
+				
 				</div>
 			</div>
 
-			
-				
 			<div id="link">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="link_t">
 						<ul>
 							<li class="li1 fl">
@@ -199,7 +279,7 @@
 						</ul>
 					</div>
 					<div class="link_b">
-						<div class="link_b_l fl">
+						<div class="link_b_l clearfix fl">
 							<ul>
 								<li class="font_header">
 									<a>关于我们</a>
@@ -316,7 +396,9 @@
 			</div>
 		</div>
 	</body>
+
 </html>
-<script src="../lib/jquery-1.4.2.min.js"></script>
-<script src="../js/login.js"></script>
+<script src="../lib/jquery-2.1.4.min.js"></script>
+<script src="../js/goods.js"></script>
+<script src="../js/goodsMax.js"></script>
 <script src="../js/commjs.js"></script>

@@ -1,0 +1,114 @@
+#nav {
+  position: relative;
+}
+#nav #goodlist {
+  display: none;
+  position: absolute;
+  top: 46px;
+  background: #fff;
+}
+#nav #goodlist .g_tab {
+  width: 248px;
+  height: 570px;
+  border: 1px solid #ccc;
+}
+#nav #goodlist .g_tab li {
+  margin-left: 0;
+  width: 250px;
+  height: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+#nav #goodlist .g_tab li:hover {
+  background: #dc0f50;
+}
+#nav #goodlist .g_tab li:hover a {
+  color: white;
+}
+#nav #goodlist .g_tab li a {
+  color: #666;
+}
+
+#goods h2 {
+  margin: 20px 0 20px 72px;
+}
+#goods .container {
+  position: relative;
+  padding: 25px;
+  border: 1px solid #ccc;
+}
+#goods .container .right {
+  position: absolute;
+  right: 62px;
+  top: 57px;
+  width: 550px;
+  height: 372px;
+  background: bisque;
+  padding: 15px;
+}
+#goods .container .right h3 {
+  width: 550px;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font-size: 20px;
+}
+#goods .container .right div p {
+  margin-bottom: 20px;
+}
+#goods .container .right div p:nth-child(1) {
+  font-size: 30px;
+  color: #dc0f50;
+}
+#goods .container .right div p:nth-child(2) {
+  font-size: 18px;
+  color: #666;
+  text-decoration: line-through;
+}
+#goods .container .right div p:nth-child(3) {
+  font-size: 18px;
+  color: #666;
+}
+#goods .container .right div {
+  margin-bottom: 20px;
+}
+#goods .container .right div span {
+  font-size: 16px;
+  color: #666;
+}
+#goods .container .right div input {
+  width: 20px;
+  height: 30px;
+}
+#goods .container .right div input:nth-child(3) {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#goods .container .right .addtocart span {
+  display: inline-block;
+  width: 132px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+}
+#goods .container .right .addtocart span:nth-child(1) {
+  background: #fea829;
+}
+#goods .container .right .addtocart span:nth-child(2) {
+  background: #dc0f50;
+}
+#goods .container .right .addtocart i {
+  font-size: 14px;
+  color: #666;
+}
+#goods .container .right .addtocart b {
+  color: #dc0f50;
+}
+
+/*# sourceMappingURL=goods.css.map */

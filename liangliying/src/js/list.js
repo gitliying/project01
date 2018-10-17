@@ -26,7 +26,7 @@ function creat(data){
 	for(var i=0;i<data.length;i++){
 		html += `
 			<li>
-			<a href=""><img src="../${data[i].url}" alt="" />
+			<a href="goods.html?gid=${data[i].gid}"><img src="../${data[i].url}" alt="" />
 				<span>${data[i].title}</span>
 			</a>
 			<i>${data[i].nowprice}</i>
@@ -66,7 +66,7 @@ $.ajax({
 				<li><span class='ipage'>${i+1}</span></li>
 			`;
 		}
-		$('#pages').html('<li><span>上一页</span></li>'+html2 + $('#pages').html());
+		$('#pages').html('<li><span id="prevPage">上一页</span></li>'+html2+$('#pages').html());
 		$('#pages span').eq(1).addClass('active');
 		
 		//绑定点击事件，页码跟随切换
@@ -78,16 +78,8 @@ $.ajax({
 			$('.ipage').eq(nowpage).addClass('active');
 		}
 		
-		$('#pages .ipage').click(function(){
-//			console.log($('#pages .ipage'));
-			//获取到当前点击页码的索引
-			var _this = $('#pages .ipage').index($(this));
-//			console.log(_this);
-			nowpage = _this;
-//			console.log(nowpage);
-			light();
-			
-			//点击哪一页，传页码给接口
+		//封装函数ajaxData,查询要加载哪一页的数据
+		function ajaxData(data){
 			$.ajax({
 				type:"get",
 				url:"../api/selectList.php",
@@ -103,11 +95,33 @@ $.ajax({
 					creat(data.list);
 				}
 			});
+		}
+		
+		$('#pages .ipage').click(function(){
+//			console.log($('#pages .ipage'));
+			//获取到当前点击页码的索引
+			var _this = $('#pages .ipage').index($(this));
+//			console.log(_this);
+			nowpage = _this;
+//			console.log(nowpage);
+			light();
 			
-			
-			
+			//点击哪一页，传页码给接口
+			ajaxData(nowpage);
 		});
-		 
+		
+		//上下页切换  
+		$('#nextPage').click(function(){
+			nowpage = ++nowpage >$("#pages .ipage").length ? 0 : nowpage;
+			light();
+			ajaxData(nowpage);
+		});
+		$('#prevPage').click(function(){
+			nowpage = --nowpage <0 ?$("#pages .ipage").length : nowpage;
+			light();
+			ajaxData(nowpage);
+		});
+	
 		
 	}
 });
