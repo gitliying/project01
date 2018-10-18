@@ -29,6 +29,57 @@
   color: #666;
 }
 
+#logo .logo_r {
+  position: relative;
+}
+#logo .logo_r #yourLists {
+  padding: 10px;
+  position: absolute;
+  right: 14px;
+  background: bisque;
+  width: 330px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  z-index: 2;
+}
+#logo .logo_r #yourLists h4 {
+  width: 308px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+#logo .logo_r #yourLists #imglists li {
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+}
+#logo .logo_r #yourLists #imglists li img {
+  float: left;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+#logo .logo_r #yourLists #imglists li span {
+  display: inline-block;
+  width: 140px;
+  height: 70px;
+  overflow: hidden;
+  margin: 0 10px;
+  float: left;
+  font-size: 12px;
+}
+#logo .logo_r #yourLists #imglists li i {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: -110px;
+  text-align: right;
+}
+
 #goods h2 {
   margin: 20px 0 20px 72px;
 }
@@ -43,10 +94,9 @@
   top: 57px;
   width: 550px;
   height: 372px;
-  background: bisque;
   padding: 15px;
 }
-#goods .container .right h3 {
+#goods .container .right #goodContent h3 {
   width: 550px;
   height: 54px;
   line-height: 54px;
@@ -54,40 +104,41 @@
   color: #333;
   font-size: 20px;
 }
-#goods .container .right div p {
+#goods .container .right #goodContent div p {
   margin-bottom: 20px;
 }
-#goods .container .right div p:nth-child(1) {
+#goods .container .right #goodContent div p:nth-child(1) {
   font-size: 30px;
   color: #dc0f50;
 }
-#goods .container .right div p:nth-child(2) {
+#goods .container .right #goodContent div p:nth-child(2) {
   font-size: 18px;
   color: #666;
   text-decoration: line-through;
 }
-#goods .container .right div p:nth-child(3) {
+#goods .container .right #goodContent div p:nth-child(3) {
   font-size: 18px;
   color: #666;
 }
-#goods .container .right div {
+#goods .container .right #buy {
   margin-bottom: 20px;
 }
-#goods .container .right div span {
+#goods .container .right #buy span {
   font-size: 16px;
   color: #666;
 }
-#goods .container .right div input {
+#goods .container .right #buy input {
   width: 20px;
   height: 30px;
 }
-#goods .container .right div input:nth-child(3) {
+#goods .container .right #buy input:nth-child(3) {
   width: 50px;
-  height: 30px;
+  height: 28px;
   text-align: center;
   line-height: 30px;
+  border: 1px solid #ccc;
 }
-#goods .container .right .addtocart span {
+#goods .container .right #addtocart span {
   display: inline-block;
   width: 132px;
   height: 38px;
@@ -97,18 +148,59 @@
   text-align: center;
   margin-right: 20px;
 }
-#goods .container .right .addtocart span:nth-child(1) {
+#goods .container .right #addtocart span:nth-child(1) {
   background: #fea829;
 }
-#goods .container .right .addtocart span:nth-child(2) {
+#goods .container .right #addtocart span:nth-child(2) {
   background: #dc0f50;
 }
-#goods .container .right .addtocart i {
+#goods .container .right #addtocart i {
   font-size: 14px;
   color: #666;
 }
-#goods .container .right .addtocart b {
+#goods .container .right #addtocart b {
   color: #dc0f50;
+}
+
+#main .container #goodDetails span {
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  background: #f5f5f5;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+}
+#main .container #goodDetails .active {
+  border-top: 2px solid #dc0f50;
+  width: 160px;
+  height: 50px;
+  background: #fff;
+}
+#main .container #goodDetails .detail {
+  width: 100%;
+}
+#main .container #goodDetails .setting {
+  display: none;
+  width: 100%;
+}
+#main .container #goodDetails .setting .setArgument li {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  color: #666;
+}
+#main .container #goodDetails .setting .setArgument li b {
+  position: absolute;
+  width: 110px;
+  font-size: 12px;
+}
+#main .container #goodDetails .setting .setArgument li i {
+  position: absolute;
+  left: 110px;
+  display: inline-block;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=goods.css.map */

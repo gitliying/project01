@@ -1,9 +1,4 @@
-//回到顶部
-$('#to_top').click(function() {
-		$("html,body").animate({
-			scrollTop: 0
-		}, 500);
-	});
+
 	//向左滚动多张lubo2
 	$(function() {
 //		$('#goodlists')

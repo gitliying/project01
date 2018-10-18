@@ -30,6 +30,69 @@
     }
 }
 
+//car
+#logo{
+    .logo_r{
+        position: relative;
+        #yourLists{
+            padding: 10px;
+            position: absolute;
+            right: 14px;
+            background: bisque;
+            width: 330px;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            z-index: 2;
+            h4{
+                width: 308px;
+                height: 20px;
+                line-height: 20px;
+                padding: 10px 0 0 10px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            #imglists{
+                li{   
+                    position: relative; 
+                    float: left;
+//                  border-bottom: 1px solid #ccc;
+                    margin-bottom: 20px;
+                    img{
+                        float: left;
+                        display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 140px;
+                        height: 70px;
+                        overflow: hidden;
+                        margin:0 10px;
+                        float: left;
+                        font-size: 12px;
+                    }
+                    i{
+                        float: right;
+                        position: absolute;
+                        top: 0px;
+                        right: -110px;
+                        text-align: right;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
 //details
 #goods{
     h2{
@@ -46,35 +109,38 @@
             top: 57px;
             width: 550px;
             height: 372px;
-            background: bisque;
+//          background: bisque;
             padding: 15px;
-            h3{
-                width: 550px;
-                height: 54px;
-                line-height: 54px;
-                border-bottom: 1px solid #ddd;
-                color: #333;
-                font-size: 20px; 
+            
+            #goodContent{
+                h3{
+                    width: 550px;
+                    height: 54px;
+                    line-height: 54px;
+                    border-bottom: 1px solid #ddd;
+                    color: #333;
+                    font-size: 20px; 
+                    }
+                div{
+                    p{
+                        margin-bottom: 20px;
+                    }
+                    p:nth-child(1){
+                        font-size: 30px;
+                        color: #dc0f50;
+                    }
+                    p:nth-child(2){
+                        font-size: 18px;
+                        color: #666;
+                        text-decoration: line-through;
+                    }
+                    p:nth-child(3){
+                        font-size: 18px;
+                        color: #666;
+                    }
+                }
             }
-            div{
-                p{
-                    margin-bottom: 20px;
-                }
-                p:nth-child(1){
-                    font-size: 30px;
-                    color: #dc0f50;
-                }
-                p:nth-child(2){
-                    font-size: 18px;
-                    color: #666;
-                    text-decoration: line-through;
-                }
-                p:nth-child(3){
-                    font-size: 18px;
-                    color: #666;
-                }
-            }
-            div{
+            #buy{
                 margin-bottom: 20px;
                 span{
                     font-size: 16px;
@@ -86,12 +152,13 @@
                 }
                 input:nth-child(3){
                     width: 50px;
-                    height: 30px;
+                    height: 28px;
                     text-align: center;
                     line-height: 30px;
+                    border: 1px solid #ccc;
                 }
             }
-            .addtocart{
+            #addtocart{
                 span{
                     display: inline-block;
                     width: 132px;
@@ -119,5 +186,58 @@
                 
             }
         }
+    }
+}
+
+#main{
+    .container{
+//      margin-top: 20px;
+//      border: 1px solid #ccc;
+        #goodDetails{
+            span{
+            display: inline-block;
+            width: 160px;
+            height: 50px;
+            background: #f5f5f5;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 50px;
+            color: #333;
+            }
+            .active{
+                border-top: 2px solid #dc0f50;
+                width: 160px;
+                height: 50px;
+                background: #fff;
+            }
+            .detail{
+                width: 100%;
+//              display: none;
+            }
+            .setting{
+                display: none;
+                width: 100%;
+               .setArgument{
+                   li{
+                       height: 40px;
+                       line-height: 40px;
+                       position: relative;
+                       color: #666;
+                       b{
+                           position: absolute;
+                           width: 110px;
+                           font-size: 12px;
+                       }
+                       i{
+                           position: absolute;
+                           left: 110px;
+                           display: inline-block;
+                           font-size: 12px;
+                       }
+                   } 
+                }
+            }
+        }
+        
     }
 }

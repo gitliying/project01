@@ -38,7 +38,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="login.html">
 									<span>请登录</span>
 								</a>
 							</li>
@@ -48,7 +48,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="car.html">
 									<span>购物车 &nbsp;&nbsp;0 &nbsp;&nbsp;件 </span>
 								</a>
 							</li>
@@ -123,6 +123,16 @@
 							<span class="img"></span>
 							<span>我的购物车</span>
 						</p>
+						<div id="yourLists">
+							<h4>最新加入商品</h4>
+							<ul id="imglists">
+								<!--<li>
+									<img src="../img/ewm011.jpg" />
+									<span>title娜箐箐 牛皮韩版粗跟中跟尖头小皮鞋w641-35-2138  黑色 35</span>
+									<i>nowprice X num</i>
+								</li>-->
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -133,7 +143,7 @@
 					</ol>
 					<ul class="fl">
 						<li>
-							<a href="">首页</a>
+							<a href="../index.html">首页</a>
 						</li>
 						<li>
 							<a href="">TV直播</a>
@@ -231,26 +241,59 @@
 					        </div>
 					    </div>
 					</div>
-					<div  id="details" class="right fr">
-						<!--<h3>title刺猬紫檀财源滚滚客餐厅大全套</h3>
-						<div>
-							<p>￥4999</p>
-							<p>￥5655</p>
-							<p>月销  &nbsp; 22件</p>
+					<div id="details" class="right fr">
+						<div id="goodContent">
+							<!--<h3>title刺猬紫檀财源滚滚客餐厅大全套</h3>
+							<div>
+								<p>￥4999</p>
+								<p>￥5655</p>
+								<p>月销  &nbsp; 22件</p>
+							</div>-->
 						</div>
-						<div>
+						
+						<div id="buy">
 							<span>购买数量</span>
-							<input type="button" value="-"/><input type="text" placeholder="1"/><input type="button" value="+" />
+							<input class="cutNum" type="button" value="-"/>
+							<input class="autoNum" type="text" value="1"/>
+							<input class="addNum" type="button" value="+" />
 						</div>
-						<div class="addtocart">
-							<span>加入购物车</span>
-							<span>立即购买</span>
+						<div id="addtocart">
+							<span class="addCar">加入购物车</span>
+							<span class="goBuy">立即购买</span>
 							<i>拨打：</i><b>4008-678-888</b><i>可语音下单~</i>
-						</div>-->
+						</div>
 					</div>
 				
 				</div>
 			</div>
+			<div id="main">
+				<div class="container">
+					<div id="goodDetails">
+						<span id="detail1" class="active">商品详情</span>
+						<span id="detail2">规格参数</span>
+						<div class="con detail">
+							<ul>
+								<li><img src="../img/details01.jpg"/></li>
+								<li><img src="../img/details02.jpg"/></li>
+								<li><img src="../img/details03.jpg"/></li>
+								<li><img src="../img/details04.jpg"/></li>
+							</ul>
+						</div>
+						<div class="con setting">
+							<ul class="setArgument">
+								<li><b>【商品编码】</b><i>956558</i></li>
+								<li><b>【品牌】</b><i>大业居</i></li>
+								<li><b>【实际入库商品】</b><i>提货券*1</i></li>
+								<li><b>【提货券含】</b><i>刺猬紫檀</i></li>
+								<li><b>【材质】</b><i>餐桌*1，餐椅*8，转盘*1，三人位沙发*1，单人位沙发*2，大平几*1，角几*2</i></li>
+								<li><b>【颜色】</b><i>黄褐色</i></li>
+								<li><b>【备注】</b><i>提货券内商品顾客收到提货券后自行拨打送货电话预约，实物由厂家配送</i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 
 			<div id="link">
 				<div class="container clearfix">
@@ -399,6 +442,7 @@
 
 </html>
 <script src="../lib/jquery-2.1.4.min.js"></script>
-<script src="../js/goods.js"></script>
+
 <script src="../js/goodsMax.js"></script>
 <script src="../js/commjs.js"></script>
+<script src="../js/goods.js"></script>

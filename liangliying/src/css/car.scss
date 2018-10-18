@@ -1,0 +1,34 @@
+#nav {
+//  height: 600px;
+    position: relative;
+    #goodlist {
+        display: none;
+        position: absolute;
+        top: 46px;
+        background: #fff;
+        .g_tab {
+            width: 248px;
+            height: 570px;
+            border: 1px solid #ccc;
+            li {
+                margin-left: 0;
+                width: 250px;
+                height: 40px;
+                padding-left: 20px;
+                box-sizing: border-box;
+                &:hover {
+                    background: #dc0f50;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+
+
