@@ -150,7 +150,7 @@ function cardata(){
 			var gValues = Object.values(jsonData);
 //			console.log(gValues[1]);
 //			console.log(gValues);
-			console.log(gValues[1]);
+//			console.log(gValues[1]);
 			//把加入过购物车的商品,插入数据库
 			$.ajax({
 				type:"get",
