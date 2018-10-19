@@ -52,7 +52,7 @@ var nums =1;//定义一个全局变量，存商品加入购物车的数量
 $('#buy').on('click','.addNum',function(){
 	var addNum = $(this).prev().val();
 	addNum++;
-	//库存10件，才能添加入购物车
+	//库存100件，才能添加入购物车
 	if( addNum > 100 ){
 		addNum = 100;
 		alert('亲，库存只有100件了！')
@@ -67,7 +67,7 @@ $('#buy').on('click','.cutNum',function(){
 //	console.log($(this));
 	cutNum--;
 	//最少有1件，才能添加入购物车
-	if(cutNum<=1){
+	if(cutNum<1){
 		cutNum=1;
 		alert('亲，至少有一件商品才能添加到购物车哦！');
 	}
@@ -81,20 +81,16 @@ $('#buy').on('keydown','.autoNum',function(){
 //	console.log($(this));
 	//最少有1件，才能添加入购物车
 	if( autoNum < 1 ){
-		autoNum = 1;
 		alert('亲，至少有一件商品才能添加到购物车哦！');
+		autoNum = 1;
 	}else if( autoNum >100 ){
-		autoNum = 100;
 		alert('亲，库存只有100件了！');
+		autoNum = 100;
 	}
 	$(this).val(autoNum);
 	nums = autoNum;
 });
 
-//添加到购物车
-$('.addCar').click(function(){
-	
-});
 
 //根据gid，从数据库调取数据
 //datas();
@@ -128,6 +124,7 @@ function　datas(){
 	});
 }
 
+//添加到购物车
 //点击加入购物车,就渲染数据出来
 $('.addCar').click(function(){
 	datas();
@@ -174,25 +171,8 @@ function cardata(){
 	
 }
 
+//把加入过购物车的商品,插入数据库
 cardata();
-//console.log(typeof(gValues) );
-//	//把加入过购物车的商品,插入数据库
-//	$.ajax({
-//		type:"get",
-//		url:"../api/insertCar.php",
-//		async:true,
-//		data:{
-//			'gid':gid,
-//			'url':gValues[1],
-//			'title':gValues[2] ,
-//			'nowprice':gValues[3] ,
-//			'nums': nums
-//			
-//		},
-//		success:function(str){
-////			console.log(str);
-//		}
-//	});
 
 
 

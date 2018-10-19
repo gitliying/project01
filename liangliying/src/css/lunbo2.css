@@ -3,6 +3,9 @@
 	height: 280px;
 	overflow: hidden;
 	margin: 50px;
+	/*position: relative;*/
+}
+.lunbo1 #marquee1 #goodlists{
 	position: relative;
 }
 

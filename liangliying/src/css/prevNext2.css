@@ -1,0 +1,110 @@
+#jyh #nav {
+  height: 46px;
+  border-top: 2px solid #dc0f50;
+}
+#jyh #nav ol {
+  width: 250px;
+  height: 46px;
+  background: #333;
+  color: #fff;
+  line-height: 46px;
+}
+#jyh #nav ul {
+  height: 46px;
+}
+#jyh #nav ul li {
+  float: left;
+  margin-left: 21px;
+  line-height: 46px;
+}
+#jyh #nav ul li a:hover {
+  color: #dc0f50;
+}
+
+#jyh #main .lunbo6 .lunbo6_t {
+  height: 30px;
+}
+#jyh #main .lunbo6 .lunbo6_t h3 {
+  display: inline-block;
+  font-size: 24px;
+  color: #333;
+  line-height: 30px;
+  padding-right: 20px;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+.lunbo6 #marquee2{
+	width: 1000px;
+	height: 290px;
+	overflow: hidden;
+	margin: 50px
+}
+.lunbo6 #youLikeList li {
+   width: 180px;
+   border: 1px solid #ddd;
+   padding: 9px;
+   float: left;
+}
+.lunbo6 #youLikeList li a {
+  display: inline-block;
+  width: 180px;
+  height: 260px;
+  position: relative;
+}
+.lunbo6 #youLikeList li img{
+  width: 180px;
+  height: 180px;
+  display: block;
+}
+.lunbo6 #youLikeList li a span {
+  display: inline-block;
+  width: 60px;
+  height: 27px;
+  background: #dc6c8f;
+  color: #fff;
+  text-align: center;
+  line-height: 27px;
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+}
+.lunbo6 #youLikeList li a .left {
+  width: 110px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.lunbo6 #youLikeList li a .left b {
+  display: block;
+  color: #333;
+}
+.lunbo6 #youLikeList li a .left b:hover {
+  color: #DC0F50;
+}
+.lunbo6 #youLikeList li a .left i:nth-child(2) {
+  color: red;
+}
+.lunbo6 #youLikeList li a .left i:nth-child(3) {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.lunbo6 #youLikeList li a .right {
+  width: 60px;
+  height: 60px;
+  background: red;
+  color: white;
+  margin-top: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.lunbo6 .g_prev {
+	position: absolute;
+	left: 88px;
+	top: 85%;
+}
+
+.lunbo6 .g_next {
+	position: absolute;
+	right: 183px;
+	top: 85%;
+}

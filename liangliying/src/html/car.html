@@ -7,6 +7,10 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/listcomm.css" />
 		<link rel="stylesheet" type="text/css" href="../css/car.css" />
+		<!--<link rel="stylesheet" href="../css/reset.css">-->
+    	<link rel="stylesheet" href="../css/carts.css">
+		
+		
 	</head>
 
 	<body>
@@ -191,9 +195,66 @@
 			</div>
 			<div id="main">
 				<div class="container">
+					<!--添加到购物车的商品-->
+					<section class="cartMain">
+				        <div class="cartMain_hd">
+				            <ul class="order_lists cartTop">
+				                <li class="list_chk">
+				                    <!--所有商品全选-->
+				                    <input type="checkbox" id="all" class="whole_check">
+				                    <label for="all"></label>
+				                    全选
+				                </li>
+				                <li class="list_con">商品信息</li>
+				                <li class="list_info">商品参数</li>
+				                <li class="list_price">单价</li>
+				                <li class="list_amount">数量</li>
+				                <li class="list_sum">小计(元)</li>
+				                <li class="list_op">操作</li>
+				            </ul>
+				        </div>
+
+        <div class="cartBox">
+            <!--<div class="shop_info">
+                <div class="all_check">
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">搜猎人艺术生活</a>
+                </div>
+            </div>
+            <div class="order_content">-->
+              
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+    </section>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 				</div>
-			</div>
+			
 			
 
 			<div id="link">
@@ -345,3 +406,5 @@
 <script src="../lib/jquery-1.11.0.min.js"></script>
 <script src="../js/car.js"></script>
 <script src="../js/commjs.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../js/carts.js"></script>

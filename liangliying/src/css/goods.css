@@ -36,7 +36,7 @@
   padding: 10px;
   position: absolute;
   right: 14px;
-  background: bisque;
+  background: #fff;
   width: 330px;
   border: 1px solid #ccc;
   overflow-y: auto;
@@ -49,7 +49,7 @@
   padding: 10px 0 0 10px;
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #dc0f50;
   margin-bottom: 20px;
 }
 #logo .logo_r #yourLists #imglists li {
@@ -78,6 +78,21 @@
   top: 0px;
   right: -110px;
   text-align: right;
+}
+#logo .logo_r #yourLists #tomycar a {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: #dc0f50;
+  cursor: pointer;
+  float: right;
 }
 
 #goods h2 {

@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/lunbo1.css" />
 		<link rel="stylesheet" type="text/css" href="css/lunbo2.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/sameLunbo1.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/prevNext2.css"/>
 	</head>
 
 	<body>
@@ -235,10 +237,10 @@
 									<a href="">hi!欢迎来到家有购物</a>
 								</li>
 								<li>
-									<a href="">登录</a>
+									<a href="html/login.html">登录</a>
 								</li>
 								<li class="fr">
-									<a href="">免费注册</a>
+									<a href="html/reg.html">免费注册</a>
 								</li>
 							</ul>
 						</div>
@@ -299,10 +301,10 @@
 							<span> &nbsp;&nbsp;0分：</span>
 							<span> &nbsp;&nbsp;0秒：</span>
 						</div>
-
 						<div id="marquee1">
+							<!--从数据库获得的数据-->
 							<ul id="goodlists">
-								<li>
+								<!--<li>
 									<a href="html/list.html"><img src="img/imglists/g (1).jpg" alt="" />
 										<span>6.9折</span>
 										<div class="left fl">
@@ -314,81 +316,16 @@
 											<p>立即     抢购</p>
 										</div>
 									</a>
-									
-								</li>
-								<li>
-									<a href="html/list.html"><img src="img/imglists/g (2).jpg" alt="" />
-										<span>6.9折</span>
-										<div class="left fl">
-											<b>title脐美人排毒贴健康轻松组</b>
-											<i>￥249</i>
-											<i>￥359</i>
-										</div>
-										<div class="right fr">
-											<p>立即     抢购</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="html/list.html"><img src="img/imglists/g (3).jpg" alt="" />
-										<span>6.9折</span>
-										<div class="left fl">
-											<b>title脐美人排毒贴健康轻松组</b>
-											<i>￥249</i>
-											<i>￥359</i>
-										</div>
-										<div class="right fr">
-											<p>立即     抢购</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="html/list.html"><img src="img/imglists/g (4).jpg" alt="" />
-										<span>6.9折</span>
-										<div class="left fl">
-											<b>title脐美人排毒贴健康轻松组</b>
-											<i>￥249</i>
-											<i>￥359</i>
-										</div>
-										<div class="right fr">
-											<p>立即     抢购</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="html/list.html"><img src="img/imglists/g (5).jpg" alt="" />
-										<span>6.9折</span>
-										<div class="left fl">
-											<b>content脐美人排毒贴健康轻松组</b>
-											<i>￥249</i>
-											<i>￥359</i>
-										</div>
-										<div class="right fr">
-											<p>立即     抢购</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="html/list.html"><img src="img/imglists/g (6).jpg" alt="" />
-										<span>6.9折</span>
-										<div class="left fl">
-											<b>脐美人排毒贴健康轻松组</b>
-											<i>￥249</i>
-											<i>￥359</i>
-										</div>
-										<div class="right fr">
-											<p>立即     抢购</p>
-										</div>
-									</a>
-								</li>
+								</li>-->
 							</ul>
 						</div>
+						<!--左右按钮-->
 						<div>
 							<p class="g_prev" id="g_prev">
-								<a href="html/list.html" id="left"><img src="img/prev_bg.png"/></a>
+								<a id="left"><img src="img/prev_bg.png"/></a>
 							</p>
 							<p class="g_next" id="g_next">
-								<a href="html/list.html" id="right"><img src="img/next_bg.png"/></a>
+								<a id="right"><img src="img/next_bg.png"/></a>
 							</p>
 						</div>
 					</div>
@@ -420,9 +357,8 @@
 								</div>
 							</div>
 							<div class="lunbo2_b_m fl">
-								<!--轮播图-->
-								
-									<!--<div id="box2">
+								<!--轮播图2-->
+							<!--<div id="box2">
 								<ul id="ul2">
 									<li>
 										<a href="" target="_blank"><img src="img/banner1.jpg" /></a>
@@ -444,9 +380,6 @@
 									<span id="next2"></span>
 								</div>
 							</div>-->
-								
-								
-								
 								
 							</div>
 							<div class="lunbo2_b_r fl"></div>
@@ -471,8 +404,22 @@
 					</div>
 				</div>
 				<div class="lunbo6">
-					<div class="lunbo5_t">
-						<h3 class="fl">猜你喜欢 </h3>
+					<div class="lunbo6_t">
+						<h3 class="">猜你喜欢 </h3>
+						<div id="marquee2">
+							<ul id="youLikeList">
+								<!--图片-->
+							</ul>
+						</div>
+						<!--左右按钮-->
+						<div>
+							<p class="g_prev" id="g_prev2">
+								<a id="left2"><img src="img/prev_bg.png"/></a>
+							</p>
+							<p class="g_next" id="g_next2">
+								<a id="right2"><img src="img/next_bg.png"/></a>
+							</p>
+						</div>
 					</div>
 				</div>
 				
@@ -627,31 +574,8 @@
 <script src="lib/jquery-1.4.2.min.js"></script>
 <script src="lib/Marquee.js"></script>
 <script src="js/startMove.js"></script>
+<!--<script src="js/sameLunbo1.js"></script>-->
 <script src="js/lunbo1.js"></script>
-<!--<script src="js/lunbo2.js"></script>-->
+
 <script src="js/index.js"></script>
-<script>
-//	$('#to_top').click(function() {
-//		$("html,body").animate({
-//			scrollTop: 0
-//		}, 500);
-//	});
-//	//向左滚动多张lubo2
-//	$(function() {
-////		$('#goodlists')
-//		$('#marquee1').Marquee({
-//			isAuto:false,
-//			distance: 1000, //每次移动162px
-//			time: 3, //延时时间3秒
-//			btnGo: {
-//				left: '#left',
-//				right: '#right'
-//			},
-//			direction: 'left' //方向
-//
-//		});
-//	});
-//	
-	
-	
-</script>
+<script src="js/commjs.js"></script>
