@@ -108,7 +108,7 @@ $('#regBtn').click(function(){
 	var isAgree = $("input[type='checkbox']").is(':checked');
 	//console.log(isAgree);
 	if(isOk && isAgree ){
-//		alert('注册成功！');
+		alert('注册成功！');
 //		console.log(123);
 		window.location.href = "login.html";
 	}else{
