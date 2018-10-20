@@ -127,6 +127,7 @@ function　datas(){
 //添加到购物车
 //点击加入购物车,就渲染数据出来
 $('.addCar').click(function(){
+	$('#yourLists').show();
 	datas();
 });
 

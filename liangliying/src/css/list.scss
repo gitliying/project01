@@ -1,12 +1,24 @@
-#nav {
-//  height: 600px;
+#jyh #nav {
+    border-top: 0;
+    border-bottom: 2px solid #dc0f50;
     position: relative;
-    #goodlist {
-        display: none;
+//  z-index: 10;
+    .navTop{
+        margin-left: 250px;
+    }
+        #goodlist {
+        z-index: 2;
+        margin-top: -46px;
         position: absolute;
         top: 46px;
         background: #fff;
-        .g_tab {
+        #nav_header{
+            width: 248px;
+            height: 46px;
+        }
+        .g_tab{
+            display: none;
+            position: relative;
             width: 248px;
             height: 570px;
             border: 1px solid #ccc;
@@ -25,11 +37,34 @@
                 a {
                     color: #666;
                 }
+        
+            }
+        }
+        //li对应的div
+        .con{
+            display: none;
+        }
+        .current{
+            z-index: 5;
+            display: block;
+            position: absolute;
+            left: 248px;
+            top: 46px;
+            width: 900px;
+            min-height: 570px;
+            background: #fff;
+            border: 1px solid #ccc;
+            ul{
+                li{
+                    display: inline-block;
+                    width: 200px;
+                    margin-left: 20px;
+                }
             }
         }
     }
+     
 }
-
 //content部分
 #content{
     width: 100%;

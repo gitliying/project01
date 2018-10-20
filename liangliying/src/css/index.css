@@ -304,7 +304,7 @@
   display: inline-block;
 }
 #jyh #main .lunbo2 .lunbo2_t p {
-  color: #ccc;
+  color: #333;
   font-size: 20px;
   display: inline-block;
   margin-right: 200px;
@@ -315,14 +315,15 @@
 #jyh #main .lunbo2 .lunbo2_b .lunbo2_b_l {
   width: 280px;
   height: 510px;
-  background: yellowgreen;
 }
 #jyh #main .lunbo2 .lunbo2_b .lunbo2_b_l .top {
   height: 386px;
 }
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_l .top img {
+  width: 280px;
+}
 #jyh #main .lunbo2 .lunbo2_b .lunbo2_b_l .bottom {
   height: 124px;
-  background: violet;
 }
 #jyh #main .lunbo2 .lunbo2_b .lunbo2_b_l .bottom li {
   float: left;
@@ -336,26 +337,233 @@
   width: 580px;
   height: 510px;
 }
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_m #ul2 {
+  width: 580px;
+  height: 380px;
+}
 #jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r {
-  width: 310px;
+  width: 300px;
   height: 510px;
-  background: firebrick;
+}
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r #hotSale {
+  width: 300px;
+  height: 100px;
+  padding: 0 10px;
+}
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r #hotSale li {
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r #hotSale li a {
+  display: inline-block;
+  width: 280px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r #hotSale li a img {
+  width: 80px;
+  height: 80px;
+}
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r #hotSale li a p {
+  position: absolute;
+  left: 85px;
+  top: 5px;
+  color: #333;
+  font-size: 16px;
+}
+#jyh #main .lunbo2 .lunbo2_b .lunbo2_b_r #hotSale li a span {
+  position: absolute;
+  left: 85px;
+  bottom: 10px;
+  font-size: 20px;
+  color: #dc0f50;
 }
 #jyh #main .lunbo3 {
   height: 560px;
-  background: lightskyblue;
+  border-bottom: 1px solid #ccc;
+}
+#jyh #main .lunbo3 .lunbo3_t {
+  height: 40px;
+  line-height: 40px;
+}
+#jyh #main .lunbo3 .lunbo3_t h3 {
+  margin-left: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+#jyh #main .lunbo3 .lunbo3_t p {
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 200px;
+}
+#jyh #main .lunbo3 .lunbo3_r {
+  width: 300px;
+  height: 510px;
+}
+#jyh #main .lunbo3 .lunbo3_r #hotSale2 {
+  width: 300px;
+  height: 100px;
+  padding: 0 10px;
+}
+#jyh #main .lunbo3 .lunbo3_r #hotSale2 li {
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#jyh #main .lunbo3 .lunbo3_r #hotSale2 li a {
+  display: inline-block;
+  width: 280px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#jyh #main .lunbo3 .lunbo3_r #hotSale2 li a img {
+  width: 80px;
+  height: 80px;
+}
+#jyh #main .lunbo3 .lunbo3_r #hotSale2 li a p {
+  position: absolute;
+  left: 85px;
+  top: 5px;
+  color: #333;
+  font-size: 16px;
+}
+#jyh #main .lunbo3 .lunbo3_r #hotSale2 li a span {
+  position: absolute;
+  left: 85px;
+  bottom: 10px;
+  font-size: 20px;
+  color: #dc0f50;
 }
 #jyh #main .lunbo4 {
   height: 560px;
-  background: lavender;
+  border-bottom: 1px solid #ccc;
+}
+#jyh #main .lunbo4 .lunbo4_t {
+  height: 40px;
+  line-height: 40px;
+}
+#jyh #main .lunbo4 .lunbo4_t h3 {
+  margin-left: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+#jyh #main .lunbo4 .lunbo4_t p {
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 200px;
+}
+#jyh #main .lunbo4 .lunbo4_r {
+  width: 300px;
+  height: 510px;
+}
+#jyh #main .lunbo4 .lunbo4_r #hotSale3 {
+  width: 300px;
+  height: 100px;
+  padding: 0 10px;
+}
+#jyh #main .lunbo4 .lunbo4_r #hotSale3 li {
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#jyh #main .lunbo4 .lunbo4_r #hotSale3 li a {
+  display: inline-block;
+  width: 280px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#jyh #main .lunbo4 .lunbo4_r #hotSale3 li a img {
+  width: 80px;
+  height: 80px;
+}
+#jyh #main .lunbo4 .lunbo4_r #hotSale3 li a p {
+  position: absolute;
+  left: 85px;
+  top: 5px;
+  color: #333;
+  font-size: 16px;
+}
+#jyh #main .lunbo4 .lunbo4_r #hotSale3 li a span {
+  position: absolute;
+  left: 85px;
+  bottom: 10px;
+  font-size: 20px;
+  color: #dc0f50;
 }
 #jyh #main .lunbo5 {
   height: 560px;
-  background: yellowgreen;
+  border-bottom: 1px solid #ccc;
+}
+#jyh #main .lunbo5 .lunbo5_t {
+  height: 40px;
+  line-height: 40px;
+}
+#jyh #main .lunbo5 .lunbo5_t h3 {
+  margin-left: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+#jyh #main .lunbo5 .lunbo5_t p {
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 200px;
+}
+#jyh #main .lunbo5 .lunbo5_r {
+  width: 300px;
+  height: 510px;
+}
+#jyh #main .lunbo5 .lunbo5_r #hotSale4 {
+  width: 300px;
+  height: 100px;
+  padding: 0 10px;
+}
+#jyh #main .lunbo5 .lunbo5_r #hotSale4 li {
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#jyh #main .lunbo5 .lunbo5_r #hotSale4 li a {
+  display: inline-block;
+  width: 280px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#jyh #main .lunbo5 .lunbo5_r #hotSale4 li a img {
+  width: 80px;
+  height: 80px;
+}
+#jyh #main .lunbo5 .lunbo5_r #hotSale4 li a p {
+  position: absolute;
+  left: 85px;
+  top: 5px;
+  color: #333;
+  font-size: 16px;
+}
+#jyh #main .lunbo5 .lunbo5_r #hotSale4 li a span {
+  position: absolute;
+  left: 85px;
+  bottom: 10px;
+  font-size: 20px;
+  color: #dc0f50;
 }
 #jyh #main .lunbo6 {
   height: 490px;
-  /*background: lightskyblue;*/
 }
 
 /*# sourceMappingURL=index.css.map */

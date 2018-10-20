@@ -1,7 +1,7 @@
 #box2{
 	width: 580px;
-	height: 382px;
-	margin: 10px auto;
+	height: 310px;
+	/*margin: 10px auto;*/
 	position: relative;
 }	
 #box2>*{
@@ -11,8 +11,8 @@
 	position: absolute;
 }
 #box2 #ul2>li img{
-	width: 580px;
-	height: 382px;
+	width: 560px;
+	height: 310px;
 }
 #box2 #ol2{
 	left: 45%;
@@ -45,7 +45,7 @@
 	height: 35px;
 	margin-top:-17px ;
 	/*background: red;*/
-	z-index: 5;
+	/*z-index: 5;*/
 	cursor: pointer;
 }
 #box2 #posi_ctrl2 span{
@@ -58,7 +58,7 @@
 	left: 33px;
 	background: url("../img/prev_bg.png");
 }
- #box #posi_ctrl #next2{
-	right: -380px;
+ #box2 #posi_ctrl2 #next2{
+	right: -243px;
 	background: url("../img/next_bg.png");
 }

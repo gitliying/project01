@@ -34,6 +34,7 @@ $(function () {
 
     $sonCheckBox.each(function () {
         $(this).click(function () {
+//      	console.log($(this));
             if ($(this).is(':checked')) {
                 //判断：所有单个商品是否勾选
                 var len = $sonCheckBox.length;
@@ -99,6 +100,7 @@ $(function () {
         var $sonChecks = $this.find('.son_check');
         $sonChecks.each(function () {
             $(this).click(function () {
+            	console.log(this);
                 if ($(this).is(':checked')) {
                     //判断：如果所有的$sonChecks都选中则店铺全选打对勾！
                     var len = $sonChecks.length;

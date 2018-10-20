@@ -60,3 +60,54 @@ function goodslistload(data,id){
 	}
 	$(id).html(html);
 }
+
+
+/*
+ * 热销榜部分，通过 selectListHotsale.php 接口，
+ * order by count(月销量，默认取销量最高前4件)
+*/
+//封装函数，创建节点
+function creatHotSale(data,id){
+	var html2 = ``;
+		for(var i=0;i<data.length;i++){
+			html2 += `
+			<li>
+				<a href="html/list.html">
+					<img src="${data[i].url}"/>
+					<p>${data[i].title}</p>
+					<span>${data[i].nowprice}</span>
+				</a>
+			</li>
+		`;
+	}
+	$(id).html(html2);
+}
+
+
+var page = 1;
+var qty = 4;
+$.ajax({
+	type:"get",
+	url:"api/selectListHotsale.php",
+	async:true,
+	data:{
+		'page':page,
+		'qty':qty
+	},
+	success:function(str){
+		var str = JSON.parse(str);
+		var data = str.list;
+//		console.log(data);
+//		console.log(data[0].url);
+		//创建节点   1F
+		creatHotSale(data,'#hotSale');
+		//2F
+		creatHotSale(data,'#hotSale2');
+		//3F
+		creatHotSale(data,'#hotSale3');
+		//4F
+		creatHotSale(data,'#hotSale4');
+	}
+});
+
+

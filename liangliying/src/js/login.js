@@ -36,7 +36,7 @@ var isTrue = false;
 			async:true,
 			success:function(str){
 				var data = JSON.parse(str);
-				console.log(data);
+//				console.log(data);
 				for(var i=0;i<data.length;i++){
 					if(pass == data[i].password){
 						$('#comfTxtPass').text('密码正确').css('color','green');
@@ -64,7 +64,8 @@ $('#btnLogin').click(function(){
 	//判断checkbox是否被选中  自动登录的时候，使用cookie记录数据
 	//var isAgree = $("input[type='checkbox']").is(':checked');
 	if(isTrue){
-		alert('登录成功！');
+		window.location.href = "../index.html";
+//		alert('登录成功！');
 	}else{
 		alert('登录失败！');
 	}

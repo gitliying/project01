@@ -334,7 +334,7 @@
                     display: inline-block;
                 }
                 p{
-                    color: #ccc;
+                    color: #333;
                     font-size: 20px;
                     display: inline-block;
                     margin-right: 200px;
@@ -346,14 +346,14 @@
                 .lunbo2_b_l{
                     width: 280px;
                     height: 510px;
-                    background: yellowgreen;
                     .top{
                         height: 386px;
-//                      background: #008120;
+                        img{
+                            width: 280px;
+                        }
                     }
                     .bottom{
                        height: 124px; 
-                       background: violet;
                        li{
                            float: left;
                            margin: 10px 0 5px 11px;
@@ -367,31 +367,245 @@
                 .lunbo2_b_m{
                     width: 580px;
                     height: 510px;
-//                  background: magenta;
+                    #ul2{
+                        width: 580px;
+                        height: 380px;
+                    }
                 } 
                 .lunbo2_b_r{
-                    width: 310px;
+                    width: 300px;
                     height: 510px;
-                    background: firebrick;
+                    #hotSale{
+                        width: 300px;
+                        height: 100px;
+                        padding: 0 10px;
+                        li{
+                            border-bottom: 1px solid #ccc;
+                            width: 300px;
+                            height: 100px;
+                            margin-bottom: 20px;
+                           a{
+                               display: inline-block;
+                                width: 280px;
+                                height: 100px;
+                                position: relative;
+                                left: 0;
+                                top: 0;
+                               img{
+                                    width: 80px;
+                                    height: 80px;
+                               }
+                                p{
+                                   position: absolute;
+                                   left: 85px;
+                                   top: 5px;
+                                   color: #333;
+                                   font-size: 16px;
+                               }
+                               span{
+                                   position: absolute;
+                                   left: 85px;
+                                   bottom: 10px;
+                                   font-size: 20px;
+                                   color: #dc0f50;
+                               }
+                              
+                           } 
+                        }
+                    }
                 }
 
             } 
         }
         .lunbo3{
             height: 560px;
-            background: lightskyblue;
+//          background: lightskyblue;
+            border-bottom: 1px solid #ccc;
+            .lunbo3_t{
+                height: 40px;
+                line-height: 40px;
+                h3{
+                    margin-left: 10px;
+                    font-size: 20px;
+                    display: inline-block;
+                }
+                p{
+                    color: #333;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-right: 200px;
+                }
+            }
+            .lunbo3_r{
+                width: 300px;
+                height: 510px;
+                #hotSale2{
+                    width: 300px;
+                    height: 100px;
+                    padding: 0 10px;
+                    li{
+                        border-bottom: 1px solid #ccc;
+                        width: 300px;
+                        height: 100px;
+                        margin-bottom: 20px;
+                       a{
+                           display: inline-block;
+                            width: 280px;
+                            height: 100px;
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                           img{
+                                width: 80px;
+                                height: 80px;
+                           }
+                            p{
+                               position: absolute;
+                               left: 85px;
+                               top: 5px;
+                               color: #333;
+                               font-size: 16px;
+                           }
+                           span{
+                               position: absolute;
+                               left: 85px;
+                               bottom: 10px;
+                               font-size: 20px;
+                               color: #dc0f50;
+                           }
+                          
+                       } 
+                    }
+                }
+            }
         }
         .lunbo4{
             height: 560px;
-            background: lavender;
+//          background: lavender;
+            border-bottom: 1px solid #ccc;
+            .lunbo4_t{
+                height: 40px;
+                line-height: 40px;
+                h3{
+                    margin-left: 10px;
+                    font-size: 20px;
+                    display: inline-block;
+                }
+                p{
+                    color: #333;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-right: 200px;
+                }
+            }
+            .lunbo4_r{
+                width: 300px;
+                height: 510px;
+                #hotSale3{
+                    width: 300px;
+                    height: 100px;
+                    padding: 0 10px;
+                    li{
+                        border-bottom: 1px solid #ccc;
+                        width: 300px;
+                        height: 100px;
+                        margin-bottom: 20px;
+                       a{
+                           display: inline-block;
+                            width: 280px;
+                            height: 100px;
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                           img{
+                                width: 80px;
+                                height: 80px;
+                           }
+                            p{
+                               position: absolute;
+                               left: 85px;
+                               top: 5px;
+                               color: #333;
+                               font-size: 16px;
+                           }
+                           span{
+                               position: absolute;
+                               left: 85px;
+                               bottom: 10px;
+                               font-size: 20px;
+                               color: #dc0f50;
+                           }
+                          
+                       } 
+                    }
+                }
+            }
         }
         .lunbo5{
             height: 560px;
-            background: yellowgreen;
+//          background: yellowgreen;
+            border-bottom: 1px solid #ccc;
+            .lunbo5_t{
+                height: 40px;
+                line-height: 40px;
+                h3{
+                    margin-left: 10px;
+                    font-size: 20px;
+                    display: inline-block;
+                }
+                p{
+                    color: #333;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-right: 200px;
+                }
+            }
+            .lunbo5_r{
+                width: 300px;
+                height: 510px;
+                #hotSale4{
+                    width: 300px;
+                    height: 100px;
+                    padding: 0 10px;
+                    li{
+                        border-bottom: 1px solid #ccc;
+                        width: 300px;
+                        height: 100px;
+                        margin-bottom: 20px;
+                       a{
+                           display: inline-block;
+                            width: 280px;
+                            height: 100px;
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                           img{
+                                width: 80px;
+                                height: 80px;
+                           }
+                            p{
+                               position: absolute;
+                               left: 85px;
+                               top: 5px;
+                               color: #333;
+                               font-size: 16px;
+                           }
+                           span{
+                               position: absolute;
+                               left: 85px;
+                               bottom: 10px;
+                               font-size: 20px;
+                               color: #dc0f50;
+                           }
+                          
+                       } 
+                    }
+                }
+            }
         }
         .lunbo6{
             height: 490px;
-            background: lightskyblue;
+//          background: lightskyblue;
         }
     }
     

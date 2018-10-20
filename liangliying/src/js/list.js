@@ -1,15 +1,19 @@
-//nav list出现和隐藏
-//$('#nav_header').mouseenter(function(){
-//	$('#goodlist').css('display','block');
-//});
-//$('#goodlist').mouseout(function(){
-//	$('#goodlist').css('display','none');
-//}).stop();
-//$('#nav_header').hover(function(){
-//	$('#goodlist').show();
-//},function(){
-//	$('#goodlist').hide();
-//});
+//三级菜单
+$('#goodlist').hover(function(){
+	$('.g_tab').show();
+},function(){
+	$('.g_tab').hide();
+});
+$('.g_tab').delegate('li','mousemove',function(){
+	var index = $(this).index();
+	//当前hover对应的li的内容显示，其他不显示
+	$('.con').eq(index).addClass('current').siblings().removeClass('current');
+});
+$('.con').mouseout(function(){
+	$('.con').removeClass('current');
+});
+
+
 
 //点击显示更多brands
 $('#more').click(function(){

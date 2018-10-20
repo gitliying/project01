@@ -17,8 +17,8 @@ $.ajax({
 	            <div class="order_content">
 	                <ul class="order_lists">
 	                    <li class="list_chk">
-	                        <input type="checkbox" id="checkbox_2" class="son_check">
-	                        <label for="checkbox_2"></label>
+	                        <input type="checkbox" id="checkbox_2${i}" class="son_check">
+	                        <label for="checkbox_2${i}"></label>
 	                    </li>
 	                    <li class="list_con">
 	                        <div class="list_img"><a href="javascript:;"><img src="../${data[i].url}" alt=""></a></div>
@@ -52,4 +52,10 @@ $.ajax({
 		$('.cartBox').html(html);
 		
 	}
+	//渲染成功之后
+	/**
+ * Created by Administrator on 2017/5/24.
+ */
+
+
 });

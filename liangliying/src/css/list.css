@@ -1,32 +1,63 @@
-#nav {
+#jyh #nav {
+  border-top: 0;
+  border-bottom: 2px solid #dc0f50;
   position: relative;
 }
-#nav #goodlist {
-  display: none;
+#jyh #nav .navTop {
+  margin-left: 250px;
+}
+#jyh #nav #goodlist {
+  z-index: 2;
+  margin-top: -46px;
   position: absolute;
   top: 46px;
   background: #fff;
 }
-#nav #goodlist .g_tab {
+#jyh #nav #goodlist #nav_header {
+  width: 248px;
+  height: 46px;
+}
+#jyh #nav #goodlist .g_tab {
+  display: none;
+  position: relative;
   width: 248px;
   height: 570px;
   border: 1px solid #ccc;
 }
-#nav #goodlist .g_tab li {
+#jyh #nav #goodlist .g_tab li {
   margin-left: 0;
   width: 250px;
   height: 40px;
   padding-left: 20px;
   box-sizing: border-box;
 }
-#nav #goodlist .g_tab li:hover {
+#jyh #nav #goodlist .g_tab li:hover {
   background: #dc0f50;
 }
-#nav #goodlist .g_tab li:hover a {
+#jyh #nav #goodlist .g_tab li:hover a {
   color: white;
 }
-#nav #goodlist .g_tab li a {
+#jyh #nav #goodlist .g_tab li a {
   color: #666;
+}
+#jyh #nav #goodlist .con {
+  display: none;
+}
+#jyh #nav #goodlist .current {
+  z-index: 5;
+  display: block;
+  position: absolute;
+  left: 248px;
+  top: 46px;
+  width: 900px;
+  min-height: 570px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+#jyh #nav #goodlist .current ul li {
+  display: inline-block;
+  width: 200px;
+  margin-left: 20px;
 }
 
 #content {
