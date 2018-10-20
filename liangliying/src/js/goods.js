@@ -164,6 +164,7 @@ function cardata(){
 				},
 				success:function(str){
 					console.log(str);
+//					console.log(nums);
 				}
 			});
 		}
@@ -174,20 +175,6 @@ function cardata(){
 
 //把加入过购物车的商品,插入数据库
 cardata();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //details tab切换
 $('#detail1').click(function(){
