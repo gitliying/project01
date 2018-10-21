@@ -103,14 +103,34 @@ $('#txtPassConfirm').blur(function(){
 });
 
 //注册
+var timer = null;
 $('#regBtn').click(function(){
 	//判断checkbox是否被选中
 	var isAgree = $("input[type='checkbox']").is(':checked');
 	//console.log(isAgree);
 	if(isOk && isAgree ){
-		alert('注册成功！');
-//		console.log(123);
-		window.location.href = "login.html";
+//		alert('注册成功！3秒后自动跳转');
+		var obj = $('#regMsg'); 
+		var screenWidth = $(window).width();
+		var screenHeight = $(window).height(); //当前浏览器窗口的 宽高
+		var scrolltop = $(document).scrollTop();//获取当前窗口距离页面顶部高度
+		var objLeft = (screenWidth - obj.width())/2 ;
+		var objTop = (screenHeight - obj.height())/2 + scrolltop;
+		obj.css({left: objLeft + 'px', top: objTop + 'px'});
+		$('#regMsg').show();
+		var tt = 3;
+		clearInterval(timer);
+    	timer = setInterval(function(){
+    		if (tt == -1) {
+      			clearInterval(timer);
+      			$('#regMsg').hide();
+	      		window.location.href = "login.html";
+	      		return;
+	      	};
+	     	$('#regMsg').html("注册成功,页面将在 " + tt + " 后转向登录页面");
+	      	tt--;
+    	},1000);
+		
 	}else{
 		alert('请先完善信息！');
 	}

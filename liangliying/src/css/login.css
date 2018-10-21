@@ -1,3 +1,19 @@
+@charset "UTF-8";
+/*3秒模态框样式*/
+#jyh {
+  position: relative;
+}
+#jyh #regMsg {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 5;
+}
+
 #login {
   padding: 60px 70px 30px 70px;
   overflow: hidden;

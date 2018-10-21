@@ -1,5 +1,16 @@
 @charset "utf-8";
-
+    #jyh{
+        position: relative;
+        #regMsg{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            background: #fff;
+            border: 1px solid #ccc;
+            display: none;
+        }
+    }
 #nav{
     #reg{
         width: 100%;

@@ -59,7 +59,6 @@ $('#buy').on('click','.addNum',function(){
 	}
 	$(this).prev().val(addNum);
 	nums = addNum;
-//	console.log(nums);
 });
 
 $('#buy').on('click','.cutNum',function(){
@@ -93,7 +92,6 @@ $('#buy').on('keydown','.autoNum',function(){
 
 
 //根据gid，从数据库调取数据
-//datas();
 function　datas(){
 	$.ajax({
 		type:"get",
@@ -109,7 +107,6 @@ function　datas(){
 	//		console.log(jsonData);
 			var gValues = Object.values(jsonData);
 //			console.log(gValues);
-			
 			//数据渲染
 			var html2 = `
 				<li>
@@ -125,14 +122,18 @@ function　datas(){
 }
 
 //添加到购物车
-//点击加入购物车,就渲染数据出来
-$('.addCar').click(function(){
+$('.addCar').click(function(nums){
+	//点击加入购物车,显示购物车列表,然后渲染数据出来
 	$('#yourLists').show();
 	datas();
+//	cardata(nums);
 });
 
-
-function cardata(){
+/*	
+ * 封装函数,把加入过购物车的商品,先从goods.php查询,
+* 再从insertCar.php插入到数据库caruserinfo表
+*/
+function cardata(nums){
 	$.ajax({
 		type:"get",
 		url:"../api/goods.php",
@@ -160,11 +161,10 @@ function cardata(){
 					'title':gValues[2] ,
 					'nowprice':gValues[3] ,
 					'nums': nums
-					
 				},
 				success:function(str){
-					console.log(str);
-//					console.log(nums);
+//					console.log(str);
+//					console.log('数据后'+nums);
 				}
 			});
 		}
@@ -173,8 +173,8 @@ function cardata(){
 	
 }
 
-//把加入过购物车的商品,插入数据库
-cardata();
+//执行插入数据
+cardata(nums);
 
 //details tab切换
 $('#detail1').click(function(){

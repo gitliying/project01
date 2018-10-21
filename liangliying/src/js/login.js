@@ -59,13 +59,34 @@ var isTrue = false;
 
 	
 
-//点击登录 
+//点击登录 3秒自动跳转首页 
+var timer = null;
 $('#btnLogin').click(function(){
-	//判断checkbox是否被选中  自动登录的时候，使用cookie记录数据
+	//判断checkbox是否被选中  自动登录的时候，使用cookie记录数据（没有做）
 	//var isAgree = $("input[type='checkbox']").is(':checked');
 	if(isTrue){
-		window.location.href = "../index.html";
+//		window.location.href = "../index.html";
 //		alert('登录成功！');
+		var obj = $('#regMsg'); 
+		var screenWidth = $(window).width();
+		var screenHeight = $(window).height(); //当前浏览器窗口的 宽高
+		var scrolltop = $(document).scrollTop();//获取当前窗口距离页面顶部高度
+		var objLeft = (screenWidth - obj.width())/2 ;
+		var objTop = (screenHeight - obj.height())/2 + scrolltop;
+		obj.css({left: objLeft + 'px', top: objTop + 'px'});
+		$('#regMsg').show();
+		var tt = 3;
+		clearInterval(timer);
+    	timer = setInterval(function(){
+    		if (tt == -1) {
+      			clearInterval(timer);
+      			$('#regMsg').hide();
+	      		window.location.href = "../index.html";
+	      		return;
+	      	};
+	     	$('#regMsg').html("登录成功,页面将在 " + tt + " 后转向首页");
+	      	tt--;
+    	},1000);
 	}else{
 		alert('登录失败！');
 	}
